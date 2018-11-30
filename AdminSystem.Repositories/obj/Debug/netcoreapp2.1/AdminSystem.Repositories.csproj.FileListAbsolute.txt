@@ -14,3 +14,7 @@ F:\StudyFile\AdminSystem\AdminSystem\AdminSystem.Repositories\obj\Debug\netcorea
 F:\StudyFile\AdminSystem\AdminSystem\AdminSystem.Repositories\obj\Debug\netcoreapp2.1\AdminSystem.Repositories.csproj.CopyComplete
 F:\StudyFile\AdminSystem\AdminSystem\AdminSystem.Repositories\obj\Debug\netcoreapp2.1\AdminSystem.Repositories.dll
 F:\StudyFile\AdminSystem\AdminSystem\AdminSystem.Repositories\obj\Debug\netcoreapp2.1\AdminSystem.Repositories.pdb
+F:\StudyFile\AdminSystem\AdminSystem\AdminSystem.Repositories\bin\Debug\netcoreapp2.1\Microsoft.AspNetCore.Authorization.dll
+F:\StudyFile\AdminSystem\AdminSystem\AdminSystem.Repositories\bin\Debug\netcoreapp2.1\Microsoft.AspNetCore.Mvc.Abstractions.dll
+F:\StudyFile\AdminSystem\AdminSystem\AdminSystem.Repositories\bin\Debug\netcoreapp2.1\Microsoft.AspNetCore.Authorization.xml
+F:\StudyFile\AdminSystem\AdminSystem\AdminSystem.Repositories\bin\Debug\netcoreapp2.1\Microsoft.AspNetCore.Mvc.Abstractions.xml

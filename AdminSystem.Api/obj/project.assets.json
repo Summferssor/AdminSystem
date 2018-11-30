@@ -28,22 +28,23 @@
           "lib/netstandard2.0/Autofac.Extensions.DependencyInjection.dll": {}
         }
       },
-      "AutoMapper/7.0.1": {
+      "AutoMapper/8.0.0": {
         "type": "package",
         "dependencies": {
-          "System.ValueTuple": "4.5.0"
+          "Microsoft.CSharp": "4.5.0",
+          "System.Reflection.Emit": "4.3.0"
         },
         "compile": {
-          "lib/netcoreapp2.0/AutoMapper.dll": {}
+          "lib/netstandard2.0/AutoMapper.dll": {}
         },
         "runtime": {
-          "lib/netcoreapp2.0/AutoMapper.dll": {}
+          "lib/netstandard2.0/AutoMapper.dll": {}
         }
       },
-      "AutoMapper.Extensions.Microsoft.DependencyInjection/5.0.1": {
+      "AutoMapper.Extensions.Microsoft.DependencyInjection/6.0.0": {
         "type": "package",
         "dependencies": {
-          "AutoMapper": "7.0.1",
+          "AutoMapper": "8.0.0",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "2.0.0"
         },
         "compile": {
@@ -268,7 +269,7 @@
           "build/netcoreapp2.1/Microsoft.AspNetCore.App.targets": {}
         }
       },
-      "Microsoft.AspNetCore.Authentication/2.1.1": {
+      "Microsoft.AspNetCore.Authentication/2.1.2": {
         "type": "package",
         "dependencies": {
           "Microsoft.AspNetCore.Authentication.Core": "2.1.1",
@@ -350,10 +351,10 @@
           "lib/netstandard2.0/Microsoft.AspNetCore.Authentication.Google.dll": {}
         }
       },
-      "Microsoft.AspNetCore.Authentication.JwtBearer/2.1.1": {
+      "Microsoft.AspNetCore.Authentication.JwtBearer/2.1.2": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Authentication": "2.1.1",
+          "Microsoft.AspNetCore.Authentication": "2.1.2",
           "Microsoft.IdentityModel.Protocols.OpenIdConnect": "5.2.0"
         },
         "compile": {
@@ -2338,20 +2339,32 @@
           "lib/netstandard2.0/Microsoft.Extensions.WebEncoders.dll": {}
         }
       },
-      "Microsoft.IdentityModel.Logging/5.2.0": {
+      "Microsoft.IdentityModel.JsonWebTokens/5.3.0": {
         "type": "package",
         "dependencies": {
-          "NETStandard.Library": "1.6.1",
+          "Microsoft.IdentityModel.Tokens": "5.3.0",
+          "Newtonsoft.Json": "10.0.1"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.IdentityModel.JsonWebTokens.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.IdentityModel.JsonWebTokens.dll": {}
+        }
+      },
+      "Microsoft.IdentityModel.Logging/5.3.0": {
+        "type": "package",
+        "dependencies": {
           "System.Diagnostics.Tracing": "4.3.0",
           "System.Globalization": "4.3.0",
           "System.IO": "4.3.0",
           "System.IO.FileSystem": "4.3.0"
         },
         "compile": {
-          "lib/netstandard1.4/Microsoft.IdentityModel.Logging.dll": {}
+          "lib/netstandard2.0/Microsoft.IdentityModel.Logging.dll": {}
         },
         "runtime": {
-          "lib/netstandard1.4/Microsoft.IdentityModel.Logging.dll": {}
+          "lib/netstandard2.0/Microsoft.IdentityModel.Logging.dll": {}
         }
       },
       "Microsoft.IdentityModel.Protocols/5.2.0": {
@@ -2403,14 +2416,14 @@
           "lib/netstandard1.4/Microsoft.IdentityModel.Protocols.WsFederation.dll": {}
         }
       },
-      "Microsoft.IdentityModel.Tokens/5.2.0": {
+      "Microsoft.IdentityModel.Tokens/5.3.0": {
         "type": "package",
         "dependencies": {
-          "Microsoft.IdentityModel.Logging": "5.2.0",
-          "NETStandard.Library": "1.6.1",
+          "Microsoft.IdentityModel.Logging": "5.3.0",
           "Newtonsoft.Json": "10.0.1",
           "System.Collections": "4.3.0",
           "System.Diagnostics.Tools": "4.3.0",
+          "System.Reflection": "4.3.0",
           "System.Runtime": "4.3.0",
           "System.Runtime.Extensions": "4.3.0",
           "System.Runtime.InteropServices": "4.3.0",
@@ -2423,10 +2436,10 @@
           "System.Threading": "4.3.0"
         },
         "compile": {
-          "lib/netstandard1.4/Microsoft.IdentityModel.Tokens.dll": {}
+          "lib/netstandard2.0/Microsoft.IdentityModel.Tokens.dll": {}
         },
         "runtime": {
-          "lib/netstandard1.4/Microsoft.IdentityModel.Tokens.dll": {}
+          "lib/netstandard2.0/Microsoft.IdentityModel.Tokens.dll": {}
         }
       },
       "Microsoft.IdentityModel.Tokens.Saml/5.2.0": {
@@ -2660,11 +2673,11 @@
           "lib/netstandard1.0/_._": {}
         }
       },
-      "Microsoft.VisualStudio.Web.CodeGeneration/2.1.1": {
+      "Microsoft.VisualStudio.Web.CodeGeneration/2.1.6": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection": "2.1.1",
-          "Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore": "2.1.1"
+          "Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore": "2.1.6"
         },
         "compile": {
           "lib/netstandard2.0/Microsoft.VisualStudio.Web.CodeGeneration.dll": {}
@@ -2673,7 +2686,7 @@
           "lib/netstandard2.0/Microsoft.VisualStudio.Web.CodeGeneration.dll": {}
         }
       },
-      "Microsoft.VisualStudio.Web.CodeGeneration.Contracts/2.1.1": {
+      "Microsoft.VisualStudio.Web.CodeGeneration.Contracts/2.1.6": {
         "type": "package",
         "dependencies": {
           "Newtonsoft.Json": "11.0.2"
@@ -2685,11 +2698,11 @@
           "lib/netstandard2.0/Microsoft.VisualStudio.Web.CodeGeneration.Contracts.dll": {}
         }
       },
-      "Microsoft.VisualStudio.Web.CodeGeneration.Core/2.1.1": {
+      "Microsoft.VisualStudio.Web.CodeGeneration.Core/2.1.6": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection": "2.1.1",
-          "Microsoft.VisualStudio.Web.CodeGeneration.Templating": "2.1.1",
+          "Microsoft.VisualStudio.Web.CodeGeneration.Templating": "2.1.6",
           "Newtonsoft.Json": "11.0.2"
         },
         "compile": {
@@ -2699,10 +2712,10 @@
           "lib/netstandard2.0/Microsoft.VisualStudio.Web.CodeGeneration.Core.dll": {}
         }
       },
-      "Microsoft.VisualStudio.Web.CodeGeneration.Design/2.1.1": {
+      "Microsoft.VisualStudio.Web.CodeGeneration.Design/2.1.6": {
         "type": "package",
         "dependencies": {
-          "Microsoft.VisualStudio.Web.CodeGenerators.Mvc": "2.1.1"
+          "Microsoft.VisualStudio.Web.CodeGenerators.Mvc": "2.1.6"
         },
         "compile": {
           "lib/netstandard2.0/dotnet-aspnet-codegenerator-design.dll": {}
@@ -2711,10 +2724,10 @@
           "lib/netstandard2.0/dotnet-aspnet-codegenerator-design.dll": {}
         }
       },
-      "Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore/2.1.1": {
+      "Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore/2.1.6": {
         "type": "package",
         "dependencies": {
-          "Microsoft.VisualStudio.Web.CodeGeneration.Core": "2.1.1"
+          "Microsoft.VisualStudio.Web.CodeGeneration.Core": "2.1.6"
         },
         "compile": {
           "lib/netstandard2.0/Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore.dll": {}
@@ -2723,12 +2736,12 @@
           "lib/netstandard2.0/Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore.dll": {}
         }
       },
-      "Microsoft.VisualStudio.Web.CodeGeneration.Templating/2.1.1": {
+      "Microsoft.VisualStudio.Web.CodeGeneration.Templating/2.1.6": {
         "type": "package",
         "dependencies": {
           "Microsoft.AspNetCore.Razor.Language": "2.1.1",
           "Microsoft.CodeAnalysis.CSharp": "2.8.0",
-          "Microsoft.VisualStudio.Web.CodeGeneration.Utils": "2.1.1"
+          "Microsoft.VisualStudio.Web.CodeGeneration.Utils": "2.1.6"
         },
         "compile": {
           "lib/netstandard2.0/Microsoft.VisualStudio.Web.CodeGeneration.Templating.dll": {}
@@ -2737,11 +2750,11 @@
           "lib/netstandard2.0/Microsoft.VisualStudio.Web.CodeGeneration.Templating.dll": {}
         }
       },
-      "Microsoft.VisualStudio.Web.CodeGeneration.Utils/2.1.1": {
+      "Microsoft.VisualStudio.Web.CodeGeneration.Utils/2.1.6": {
         "type": "package",
         "dependencies": {
           "Microsoft.CodeAnalysis.CSharp.Workspaces": "2.8.0",
-          "Microsoft.VisualStudio.Web.CodeGeneration.Contracts": "2.1.1",
+          "Microsoft.VisualStudio.Web.CodeGeneration.Contracts": "2.1.6",
           "Newtonsoft.Json": "11.0.2",
           "NuGet.Frameworks": "4.7.0"
         },
@@ -2752,10 +2765,10 @@
           "lib/netstandard2.0/Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll": {}
         }
       },
-      "Microsoft.VisualStudio.Web.CodeGenerators.Mvc/2.1.1": {
+      "Microsoft.VisualStudio.Web.CodeGenerators.Mvc/2.1.6": {
         "type": "package",
         "dependencies": {
-          "Microsoft.VisualStudio.Web.CodeGeneration": "2.1.1"
+          "Microsoft.VisualStudio.Web.CodeGeneration": "2.1.6"
         },
         "compile": {
           "lib/netstandard2.0/Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll": {}
@@ -2882,6 +2895,35 @@
           "lib/netstandard1.6/NuGet.Frameworks.dll": {}
         }
       },
+      "Pivotal.Discovery.ClientCore/2.1.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Hosting.Abstractions": "2.0.0",
+          "Microsoft.Extensions.Options.ConfigurationExtensions": "2.0.0",
+          "Pivotal.Discovery.EurekaBase": "2.1.1",
+          "Steeltoe.CloudFoundry.ConnectorBase": "2.1.1",
+          "Steeltoe.Common": "2.1.1"
+        },
+        "compile": {
+          "lib/netstandard2.0/Pivotal.Discovery.ClientCore.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Pivotal.Discovery.ClientCore.dll": {}
+        }
+      },
+      "Pivotal.Discovery.EurekaBase/2.1.1": {
+        "type": "package",
+        "dependencies": {
+          "Steeltoe.CloudFoundry.ConnectorBase": "2.1.1",
+          "Steeltoe.Discovery.EurekaBase": "2.1.1"
+        },
+        "compile": {
+          "lib/netstandard2.0/Pivotal.Discovery.EurekaBase.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Pivotal.Discovery.EurekaBase.dll": {}
+        }
+      },
       "Pomelo.EntityFrameworkCore.MySql/2.1.2": {
         "type": "package",
         "dependencies": {
@@ -2931,7 +2973,7 @@
           "lib/netstandard1.0/Remotion.Linq.dll": {}
         }
       },
-      "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {
+      "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.2": {
         "type": "package",
         "runtimeTargets": {
           "runtimes/debian.8-x64/native/System.Security.Cryptography.Native.OpenSsl.so": {
@@ -2940,7 +2982,7 @@
           }
         }
       },
-      "runtime.fedora.23-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {
+      "runtime.fedora.23-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.2": {
         "type": "package",
         "runtimeTargets": {
           "runtimes/fedora.23-x64/native/System.Security.Cryptography.Native.OpenSsl.so": {
@@ -2949,7 +2991,7 @@
           }
         }
       },
-      "runtime.fedora.24-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {
+      "runtime.fedora.24-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.2": {
         "type": "package",
         "runtimeTargets": {
           "runtimes/fedora.24-x64/native/System.Security.Cryptography.Native.OpenSsl.so": {
@@ -3017,19 +3059,19 @@
           "lib/netstandard1.0/_._": {}
         }
       },
-      "runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {
+      "runtime.native.System.Security.Cryptography.OpenSsl/4.3.2": {
         "type": "package",
         "dependencies": {
-          "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl": "4.3.0",
-          "runtime.fedora.23-x64.runtime.native.System.Security.Cryptography.OpenSsl": "4.3.0",
-          "runtime.fedora.24-x64.runtime.native.System.Security.Cryptography.OpenSsl": "4.3.0",
-          "runtime.opensuse.13.2-x64.runtime.native.System.Security.Cryptography.OpenSsl": "4.3.0",
-          "runtime.opensuse.42.1-x64.runtime.native.System.Security.Cryptography.OpenSsl": "4.3.0",
-          "runtime.osx.10.10-x64.runtime.native.System.Security.Cryptography.OpenSsl": "4.3.0",
-          "runtime.rhel.7-x64.runtime.native.System.Security.Cryptography.OpenSsl": "4.3.0",
-          "runtime.ubuntu.14.04-x64.runtime.native.System.Security.Cryptography.OpenSsl": "4.3.0",
-          "runtime.ubuntu.16.04-x64.runtime.native.System.Security.Cryptography.OpenSsl": "4.3.0",
-          "runtime.ubuntu.16.10-x64.runtime.native.System.Security.Cryptography.OpenSsl": "4.3.0"
+          "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl": "4.3.2",
+          "runtime.fedora.23-x64.runtime.native.System.Security.Cryptography.OpenSsl": "4.3.2",
+          "runtime.fedora.24-x64.runtime.native.System.Security.Cryptography.OpenSsl": "4.3.2",
+          "runtime.opensuse.13.2-x64.runtime.native.System.Security.Cryptography.OpenSsl": "4.3.2",
+          "runtime.opensuse.42.1-x64.runtime.native.System.Security.Cryptography.OpenSsl": "4.3.2",
+          "runtime.osx.10.10-x64.runtime.native.System.Security.Cryptography.OpenSsl": "4.3.2",
+          "runtime.rhel.7-x64.runtime.native.System.Security.Cryptography.OpenSsl": "4.3.2",
+          "runtime.ubuntu.14.04-x64.runtime.native.System.Security.Cryptography.OpenSsl": "4.3.2",
+          "runtime.ubuntu.16.04-x64.runtime.native.System.Security.Cryptography.OpenSsl": "4.3.2",
+          "runtime.ubuntu.16.10-x64.runtime.native.System.Security.Cryptography.OpenSsl": "4.3.2"
         },
         "compile": {
           "lib/netstandard1.0/_._": {}
@@ -3038,7 +3080,7 @@
           "lib/netstandard1.0/_._": {}
         }
       },
-      "runtime.opensuse.13.2-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {
+      "runtime.opensuse.13.2-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.2": {
         "type": "package",
         "runtimeTargets": {
           "runtimes/opensuse.13.2-x64/native/System.Security.Cryptography.Native.OpenSsl.so": {
@@ -3047,7 +3089,7 @@
           }
         }
       },
-      "runtime.opensuse.42.1-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {
+      "runtime.opensuse.42.1-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.2": {
         "type": "package",
         "runtimeTargets": {
           "runtimes/opensuse.42.1-x64/native/System.Security.Cryptography.Native.OpenSsl.so": {
@@ -3065,7 +3107,7 @@
           }
         }
       },
-      "runtime.osx.10.10-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {
+      "runtime.osx.10.10-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.2": {
         "type": "package",
         "runtimeTargets": {
           "runtimes/osx.10.10-x64/native/System.Security.Cryptography.Native.OpenSsl.dylib": {
@@ -3074,7 +3116,7 @@
           }
         }
       },
-      "runtime.rhel.7-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {
+      "runtime.rhel.7-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.2": {
         "type": "package",
         "runtimeTargets": {
           "runtimes/rhel.7-x64/native/System.Security.Cryptography.Native.OpenSsl.so": {
@@ -3083,7 +3125,7 @@
           }
         }
       },
-      "runtime.ubuntu.14.04-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {
+      "runtime.ubuntu.14.04-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.2": {
         "type": "package",
         "runtimeTargets": {
           "runtimes/ubuntu.14.04-x64/native/System.Security.Cryptography.Native.OpenSsl.so": {
@@ -3092,7 +3134,7 @@
           }
         }
       },
-      "runtime.ubuntu.16.04-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {
+      "runtime.ubuntu.16.04-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.2": {
         "type": "package",
         "runtimeTargets": {
           "runtimes/ubuntu.16.04-x64/native/System.Security.Cryptography.Native.OpenSsl.so": {
@@ -3101,7 +3143,7 @@
           }
         }
       },
-      "runtime.ubuntu.16.10-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {
+      "runtime.ubuntu.16.10-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.2": {
         "type": "package",
         "runtimeTargets": {
           "runtimes/ubuntu.16.10-x64/native/System.Security.Cryptography.Native.OpenSsl.so": {
@@ -3135,6 +3177,98 @@
             "assetType": "native",
             "rid": "win-x86"
           }
+        }
+      },
+      "Steeltoe.CloudFoundry.ConnectorBase/2.1.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Configuration.Abstractions": "2.0.0",
+          "Microsoft.Extensions.Configuration.Binder": "2.0.0",
+          "Microsoft.Extensions.Options": "2.0.0",
+          "Steeltoe.Extensions.Configuration.CloudFoundryBase": "2.1.1"
+        },
+        "compile": {
+          "lib/netstandard2.0/Steeltoe.CloudFoundry.ConnectorBase.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Steeltoe.CloudFoundry.ConnectorBase.dll": {}
+        }
+      },
+      "Steeltoe.Common/2.1.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Configuration.Binder": "2.0.0",
+          "Microsoft.Extensions.Logging.Abstractions": "2.0.0",
+          "System.Diagnostics.DiagnosticSource": "4.4.1"
+        },
+        "compile": {
+          "lib/netstandard2.0/Steeltoe.Common.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Steeltoe.Common.dll": {}
+        }
+      },
+      "Steeltoe.Common.Http/2.1.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Http": "2.1.0",
+          "Newtonsoft.Json": "11.0.2",
+          "Steeltoe.Common": "2.1.1",
+          "System.Net.Http": "4.3.3"
+        },
+        "compile": {
+          "lib/netstandard2.0/Steeltoe.Common.Http.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Steeltoe.Common.Http.dll": {}
+        }
+      },
+      "Steeltoe.Discovery.EurekaBase/2.1.1": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "11.0.2",
+          "Steeltoe.Common.Http": "2.1.1"
+        },
+        "compile": {
+          "lib/netstandard2.0/Steeltoe.Discovery.EurekaBase.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Steeltoe.Discovery.EurekaBase.dll": {}
+        }
+      },
+      "Steeltoe.Extensions.Configuration.CloudFoundryBase/2.1.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Configuration": "2.0.0",
+          "Microsoft.Extensions.Configuration.EnvironmentVariables": "2.0.0",
+          "Microsoft.Extensions.Configuration.Json": "2.0.0",
+          "Steeltoe.Common": "2.1.1"
+        },
+        "compile": {
+          "lib/netstandard2.0/Steeltoe.Extensions.Configuration.CloudFoundryBase.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Steeltoe.Extensions.Configuration.CloudFoundryBase.dll": {}
+        }
+      },
+      "Steeltoe.Extensions.Configuration.ConfigServer/1.1.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Hosting.Abstractions": "1.1.0",
+          "Microsoft.Extensions.Configuration": "1.1.0",
+          "Microsoft.Extensions.Logging.Abstractions": "1.1.0",
+          "Microsoft.Extensions.Options": "1.1.0",
+          "Microsoft.Extensions.Options.ConfigurationExtensions": "1.1.0",
+          "NETStandard.Library": "1.6.1",
+          "Newtonsoft.Json": "9.0.1",
+          "System.Net.Http": "4.3.1",
+          "System.Threading.Thread": "4.3.0"
+        },
+        "compile": {
+          "lib/netstandard1.3/Steeltoe.Extensions.Configuration.ConfigServer.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.3/Steeltoe.Extensions.Configuration.ConfigServer.dll": {}
         }
       },
       "System.AppContext/4.3.0": {
@@ -3575,18 +3709,18 @@
           }
         }
       },
-      "System.IdentityModel.Tokens.Jwt/5.2.0": {
+      "System.IdentityModel.Tokens.Jwt/5.3.0": {
         "type": "package",
         "dependencies": {
-          "Microsoft.IdentityModel.Tokens": "5.2.0",
-          "NETStandard.Library": "1.6.1",
+          "Microsoft.IdentityModel.JsonWebTokens": "5.3.0",
+          "Microsoft.IdentityModel.Tokens": "5.3.0",
           "Newtonsoft.Json": "10.0.1"
         },
         "compile": {
-          "lib/netstandard1.4/System.IdentityModel.Tokens.Jwt.dll": {}
+          "lib/netstandard2.0/System.IdentityModel.Tokens.Jwt.dll": {}
         },
         "runtime": {
-          "lib/netstandard1.4/System.IdentityModel.Tokens.Jwt.dll": {}
+          "lib/netstandard2.0/System.IdentityModel.Tokens.Jwt.dll": {}
         }
       },
       "System.Interactive.Async/3.1.1": {
@@ -3777,7 +3911,7 @@
           "lib/netcoreapp2.1/_._": {}
         }
       },
-      "System.Net.Http/4.3.0": {
+      "System.Net.Http/4.3.3": {
         "type": "package",
         "dependencies": {
           "Microsoft.NETCore.Platforms": "1.1.0",
@@ -3805,7 +3939,7 @@
           "System.Threading.Tasks": "4.3.0",
           "runtime.native.System": "4.3.0",
           "runtime.native.System.Net.Http": "4.3.0",
-          "runtime.native.System.Security.Cryptography.OpenSsl": "4.3.0"
+          "runtime.native.System.Security.Cryptography.OpenSsl": "4.3.2"
         },
         "compile": {
           "ref/netstandard1.3/System.Net.Http.dll": {}
@@ -4594,19 +4728,24 @@
           "System.Runtime": "4.3.0"
         },
         "compile": {
-          "ref/netstandard1.3/_._": {}
+          "ref/netstandard1.3/System.Threading.Thread.dll": {}
         },
         "runtime": {
           "lib/netstandard1.3/System.Threading.Thread.dll": {}
         }
       },
-      "System.ValueTuple/4.5.0": {
+      "System.ValueTuple/4.3.0": {
         "type": "package",
+        "dependencies": {
+          "System.Collections": "4.3.0",
+          "System.Resources.ResourceManager": "4.3.0",
+          "System.Runtime": "4.3.0"
+        },
         "compile": {
-          "ref/netcoreapp2.0/_._": {}
+          "lib/netstandard1.0/System.ValueTuple.dll": {}
         },
         "runtime": {
-          "lib/netcoreapp2.0/_._": {}
+          "lib/netstandard1.0/System.ValueTuple.dll": {}
         }
       },
       "System.Xml.ReaderWriter/4.3.0": {
@@ -4750,6 +4889,12 @@
       "AdminSystem.Common/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.1",
+        "dependencies": {
+          "Microsoft.AspNetCore.Authentication.JwtBearer": "2.1.2",
+          "Microsoft.AspNetCore.Http.Features": "2.1.1",
+          "Microsoft.Extensions.Configuration": "2.1.1",
+          "Microsoft.Extensions.Options": "2.1.1"
+        },
         "compile": {
           "bin/placeholder/AdminSystem.Common.dll": {}
         },
@@ -4830,35 +4975,29 @@
         "lib/netstandard2.0/Autofac.Extensions.DependencyInjection.xml"
       ]
     },
-    "AutoMapper/7.0.1": {
-      "sha512": "1qKMJ1WPs42VkgeQ5iXRDWf46+iUqYM/yColAvAeDQhUgQNsgzSxjMDHQc7dL2x/o0JY8TwG+obR7vbvgh+Y3g==",
+    "AutoMapper/8.0.0": {
+      "sha512": "kcbje0Y71XkvzPn8k6OROZGOn2SKaWimon3Bu1WUTVoV5GTJVym+k+zQuKApyyFVRfk7bisumj/qUX4xIIXS+Q==",
       "type": "package",
-      "path": "automapper/7.0.1",
+      "path": "automapper/8.0.0",
       "files": [
         ".signature.p7s",
-        "automapper.7.0.1.nupkg.sha512",
+        "automapper.8.0.0.nupkg.sha512",
         "automapper.nuspec",
-        "lib/net45/AutoMapper.dll",
-        "lib/net45/AutoMapper.pdb",
-        "lib/net45/AutoMapper.xml",
-        "lib/netcoreapp2.0/AutoMapper.dll",
-        "lib/netcoreapp2.0/AutoMapper.pdb",
-        "lib/netcoreapp2.0/AutoMapper.xml",
-        "lib/netstandard1.3/AutoMapper.dll",
-        "lib/netstandard1.3/AutoMapper.pdb",
-        "lib/netstandard1.3/AutoMapper.xml",
+        "lib/net461/AutoMapper.dll",
+        "lib/net461/AutoMapper.pdb",
+        "lib/net461/AutoMapper.xml",
         "lib/netstandard2.0/AutoMapper.dll",
         "lib/netstandard2.0/AutoMapper.pdb",
         "lib/netstandard2.0/AutoMapper.xml"
       ]
     },
-    "AutoMapper.Extensions.Microsoft.DependencyInjection/5.0.1": {
-      "sha512": "FsPcuVkaAj232P6yrSxnQybBnwawvsg3C65l+BDShGaU9jfANGjMY2evNlQ8RAEezrutpeQT9LFWQJ+sXhaHPw==",
+    "AutoMapper.Extensions.Microsoft.DependencyInjection/6.0.0": {
+      "sha512": "EHxmLh6OuTuiGU3U+pHhNHwWOq1juK+Wbvr2n7Oj8/L819+DCnr7dtVtIGmBYHrle6foukEXqT5rcbRS9+CFyA==",
       "type": "package",
-      "path": "automapper.extensions.microsoft.dependencyinjection/5.0.1",
+      "path": "automapper.extensions.microsoft.dependencyinjection/6.0.0",
       "files": [
         ".signature.p7s",
-        "automapper.extensions.microsoft.dependencyinjection.5.0.1.nupkg.sha512",
+        "automapper.extensions.microsoft.dependencyinjection.6.0.0.nupkg.sha512",
         "automapper.extensions.microsoft.dependencyinjection.nuspec",
         "lib/netstandard2.0/AutoMapper.Extensions.Microsoft.DependencyInjection.dll",
         "lib/netstandard2.0/AutoMapper.Extensions.Microsoft.DependencyInjection.pdb"
@@ -4917,15 +5056,15 @@
         "microsoft.aspnetcore.app.nuspec"
       ]
     },
-    "Microsoft.AspNetCore.Authentication/2.1.1": {
-      "sha512": "WgbDLOGoyX0/EoUdAlihMaKIpON6LwCYZ8fiPhZZe+qdCJhvl1aTBmJ/carHcv3NJGT+ETuq2ppYQr7PKLq1CQ==",
+    "Microsoft.AspNetCore.Authentication/2.1.2": {
+      "sha512": "MXbDTincCKqkrrMF5P8nhjvmXA1yL1mHj8yPJ32wfBkfkLZfV0EhIp/MGKupiVyqsAhjAk0NL9cPslcyvBsQkg==",
       "type": "package",
-      "path": "microsoft.aspnetcore.authentication/2.1.1",
+      "path": "microsoft.aspnetcore.authentication/2.1.2",
       "files": [
         ".signature.p7s",
         "lib/netstandard2.0/Microsoft.AspNetCore.Authentication.dll",
         "lib/netstandard2.0/Microsoft.AspNetCore.Authentication.xml",
-        "microsoft.aspnetcore.authentication.2.1.1.nupkg.sha512",
+        "microsoft.aspnetcore.authentication.2.1.2.nupkg.sha512",
         "microsoft.aspnetcore.authentication.nuspec"
       ]
     },
@@ -4989,15 +5128,15 @@
         "microsoft.aspnetcore.authentication.google.nuspec"
       ]
     },
-    "Microsoft.AspNetCore.Authentication.JwtBearer/2.1.1": {
-      "sha512": "u4lJIWhWp2+YIOofX98LwvK1dDuaMBwkNmDk8IDurTv8AivWdTDGocyBC5Guzxf6vb9DvILM+8JEzmzkUWhJIg==",
+    "Microsoft.AspNetCore.Authentication.JwtBearer/2.1.2": {
+      "sha512": "vgcgF9LTaFX3NmHwJ1otE21uUeXAgmNzGu6FCbTclJuxXAN0+B1USvqW+M3eaDKq+KbP7EYtzYgrSXZJnBRUyg==",
       "type": "package",
-      "path": "microsoft.aspnetcore.authentication.jwtbearer/2.1.1",
+      "path": "microsoft.aspnetcore.authentication.jwtbearer/2.1.2",
       "files": [
         ".signature.p7s",
         "lib/netstandard2.0/Microsoft.AspNetCore.Authentication.JwtBearer.dll",
         "lib/netstandard2.0/Microsoft.AspNetCore.Authentication.JwtBearer.xml",
-        "microsoft.aspnetcore.authentication.jwtbearer.2.1.1.nupkg.sha512",
+        "microsoft.aspnetcore.authentication.jwtbearer.2.1.2.nupkg.sha512",
         "microsoft.aspnetcore.authentication.jwtbearer.nuspec"
       ]
     },
@@ -6034,7 +6173,7 @@
       ]
     },
     "Microsoft.CodeAnalysis.Analyzers/1.1.0": {
-      "sha512": "HS3iRWZKcUw/8eZ/08GXKY2Bn7xNzQPzf8gRPHGSowX7u7XXu9i9YEaBeBNKUXWfI7qjvT2zXtLUvbN0hds8vg==",
+      "sha512": "cbKC2ePZKLEMjpO9B2FOdRXuvuG4jtJ7/7OjFZEIjW6pxfSan438A2dNXEzzAcZC0jlNMsGD0Z9oX47danFa+w==",
       "type": "package",
       "path": "microsoft.codeanalysis.analyzers/1.1.0",
       "files": [
@@ -6834,18 +6973,53 @@
         "microsoft.extensions.webencoders.nuspec"
       ]
     },
-    "Microsoft.IdentityModel.Logging/5.2.0": {
-      "sha512": "OgiaeDGsuTpXrx77a4gyN6Flp4y7jro4La92UtVEEVxnRb+TnRxawVYY3Z5EVme5fSwvE31vo2iNAwI/jBKjPg==",
+    "Microsoft.IdentityModel.JsonWebTokens/5.3.0": {
+      "sha512": "GmiwCJPEe+V8+2GO3kD8K0IeqNHlTL0xZcHePIjyJveRn7OderxdT32aCZeJZEvz5w2Jlyag3zdyu1zkdTJo2A==",
       "type": "package",
-      "path": "microsoft.identitymodel.logging/5.2.0",
+      "path": "microsoft.identitymodel.jsonwebtokens/5.3.0",
       "files": [
+        ".signature.p7s",
+        "lib/net45/Microsoft.IdentityModel.JsonWebTokens.dll",
+        "lib/net45/Microsoft.IdentityModel.JsonWebTokens.pdb",
+        "lib/net45/Microsoft.IdentityModel.JsonWebTokens.xml",
+        "lib/net451/Microsoft.IdentityModel.JsonWebTokens.dll",
+        "lib/net451/Microsoft.IdentityModel.JsonWebTokens.pdb",
+        "lib/net451/Microsoft.IdentityModel.JsonWebTokens.xml",
+        "lib/net461/Microsoft.IdentityModel.JsonWebTokens.dll",
+        "lib/net461/Microsoft.IdentityModel.JsonWebTokens.pdb",
+        "lib/net461/Microsoft.IdentityModel.JsonWebTokens.xml",
+        "lib/netstandard1.4/Microsoft.IdentityModel.JsonWebTokens.dll",
+        "lib/netstandard1.4/Microsoft.IdentityModel.JsonWebTokens.pdb",
+        "lib/netstandard1.4/Microsoft.IdentityModel.JsonWebTokens.xml",
+        "lib/netstandard2.0/Microsoft.IdentityModel.JsonWebTokens.dll",
+        "lib/netstandard2.0/Microsoft.IdentityModel.JsonWebTokens.pdb",
+        "lib/netstandard2.0/Microsoft.IdentityModel.JsonWebTokens.xml",
+        "microsoft.identitymodel.jsonwebtokens.5.3.0.nupkg.sha512",
+        "microsoft.identitymodel.jsonwebtokens.nuspec"
+      ]
+    },
+    "Microsoft.IdentityModel.Logging/5.3.0": {
+      "sha512": "y2Hu8ypzoZbyxJiU2LQHkkCUjl5H1oAVapRbEQBbhrUe7hG2g8t+1Hb3NAhmM1SqStd71+rZR27TWv2mc6Isfw==",
+      "type": "package",
+      "path": "microsoft.identitymodel.logging/5.3.0",
+      "files": [
+        ".signature.p7s",
         "lib/net45/Microsoft.IdentityModel.Logging.dll",
+        "lib/net45/Microsoft.IdentityModel.Logging.pdb",
         "lib/net45/Microsoft.IdentityModel.Logging.xml",
         "lib/net451/Microsoft.IdentityModel.Logging.dll",
+        "lib/net451/Microsoft.IdentityModel.Logging.pdb",
         "lib/net451/Microsoft.IdentityModel.Logging.xml",
+        "lib/net461/Microsoft.IdentityModel.Logging.dll",
+        "lib/net461/Microsoft.IdentityModel.Logging.pdb",
+        "lib/net461/Microsoft.IdentityModel.Logging.xml",
         "lib/netstandard1.4/Microsoft.IdentityModel.Logging.dll",
+        "lib/netstandard1.4/Microsoft.IdentityModel.Logging.pdb",
         "lib/netstandard1.4/Microsoft.IdentityModel.Logging.xml",
-        "microsoft.identitymodel.logging.5.2.0.nupkg.sha512",
+        "lib/netstandard2.0/Microsoft.IdentityModel.Logging.dll",
+        "lib/netstandard2.0/Microsoft.IdentityModel.Logging.pdb",
+        "lib/netstandard2.0/Microsoft.IdentityModel.Logging.xml",
+        "microsoft.identitymodel.logging.5.3.0.nupkg.sha512",
         "microsoft.identitymodel.logging.nuspec"
       ]
     },
@@ -6894,18 +7068,28 @@
         "microsoft.identitymodel.protocols.wsfederation.nuspec"
       ]
     },
-    "Microsoft.IdentityModel.Tokens/5.2.0": {
-      "sha512": "Uz1Dk5Gw/jgIHEzac9cXhq7pH0Hf5P73vf23hR6QJn0IamLbPG4qoHnGyPMn9qQXc+jDb/j3fWOhvWGrteJXtA==",
+    "Microsoft.IdentityModel.Tokens/5.3.0": {
+      "sha512": "g+JFqRJcMv8gRdyIgaloL9Rk8iLJLGdCuLVcg84/W5vfGq9WWHF9DHmcyxO7Ac1fdm2Q3PmY/nvUhsOhB3TwXA==",
       "type": "package",
-      "path": "microsoft.identitymodel.tokens/5.2.0",
+      "path": "microsoft.identitymodel.tokens/5.3.0",
       "files": [
+        ".signature.p7s",
         "lib/net45/Microsoft.IdentityModel.Tokens.dll",
+        "lib/net45/Microsoft.IdentityModel.Tokens.pdb",
         "lib/net45/Microsoft.IdentityModel.Tokens.xml",
         "lib/net451/Microsoft.IdentityModel.Tokens.dll",
+        "lib/net451/Microsoft.IdentityModel.Tokens.pdb",
         "lib/net451/Microsoft.IdentityModel.Tokens.xml",
+        "lib/net461/Microsoft.IdentityModel.Tokens.dll",
+        "lib/net461/Microsoft.IdentityModel.Tokens.pdb",
+        "lib/net461/Microsoft.IdentityModel.Tokens.xml",
         "lib/netstandard1.4/Microsoft.IdentityModel.Tokens.dll",
+        "lib/netstandard1.4/Microsoft.IdentityModel.Tokens.pdb",
         "lib/netstandard1.4/Microsoft.IdentityModel.Tokens.xml",
-        "microsoft.identitymodel.tokens.5.2.0.nupkg.sha512",
+        "lib/netstandard2.0/Microsoft.IdentityModel.Tokens.dll",
+        "lib/netstandard2.0/Microsoft.IdentityModel.Tokens.pdb",
+        "lib/netstandard2.0/Microsoft.IdentityModel.Tokens.xml",
+        "microsoft.identitymodel.tokens.5.3.0.nupkg.sha512",
         "microsoft.identitymodel.tokens.nuspec"
       ]
     },
@@ -7287,53 +7471,53 @@
         "version.txt"
       ]
     },
-    "Microsoft.VisualStudio.Web.CodeGeneration/2.1.1": {
-      "sha512": "xvNRQmZOYfuReVC9trT8sTYVRm7yJzI5z1YZ4iO6Im/EWOWoqqLNoYG0sY8EHnp4DOtioGJ/hmJ+ksqaJN8aBA==",
+    "Microsoft.VisualStudio.Web.CodeGeneration/2.1.6": {
+      "sha512": "862vmT/ozNVByZqBoxTjNMZi+2Y8NFpBkp50ujUIS2eYn3ksODRHj9+xGsoh78Vwih6O6Zm7VLv+HeeEK2Gnvg==",
       "type": "package",
-      "path": "microsoft.visualstudio.web.codegeneration/2.1.1",
+      "path": "microsoft.visualstudio.web.codegeneration/2.1.6",
       "files": [
         ".signature.p7s",
         "lib/netstandard2.0/Microsoft.VisualStudio.Web.CodeGeneration.dll",
         "lib/netstandard2.0/Microsoft.VisualStudio.Web.CodeGeneration.xml",
-        "microsoft.visualstudio.web.codegeneration.2.1.1.nupkg.sha512",
+        "microsoft.visualstudio.web.codegeneration.2.1.6.nupkg.sha512",
         "microsoft.visualstudio.web.codegeneration.nuspec"
       ]
     },
-    "Microsoft.VisualStudio.Web.CodeGeneration.Contracts/2.1.1": {
-      "sha512": "Su++Q22kR3EaWmg7flhuAX0xZFPVL4z99HYc9CNQZksi4L/lCzxyIRXJUV3qTEyyX8wkl6sx3RDVUcYcBTdjlg==",
+    "Microsoft.VisualStudio.Web.CodeGeneration.Contracts/2.1.6": {
+      "sha512": "pp7hzmTyFUqrnvAsXPg7TZDMKY0ZRKxzj7QJPWQCIFP6pqQT/oWjPMeCrCgXRu0t1ftbz/0dAGR1FE234IUBTg==",
       "type": "package",
-      "path": "microsoft.visualstudio.web.codegeneration.contracts/2.1.1",
+      "path": "microsoft.visualstudio.web.codegeneration.contracts/2.1.6",
       "files": [
         ".signature.p7s",
         "lib/netstandard2.0/Microsoft.VisualStudio.Web.CodeGeneration.Contracts.dll",
         "lib/netstandard2.0/Microsoft.VisualStudio.Web.CodeGeneration.Contracts.xml",
-        "microsoft.visualstudio.web.codegeneration.contracts.2.1.1.nupkg.sha512",
+        "microsoft.visualstudio.web.codegeneration.contracts.2.1.6.nupkg.sha512",
         "microsoft.visualstudio.web.codegeneration.contracts.nuspec"
       ]
     },
-    "Microsoft.VisualStudio.Web.CodeGeneration.Core/2.1.1": {
-      "sha512": "uIhfMpJOjQi/fBtKglWDP8lSuiX5AOQwomCS6hZ37EzKB5tMnaH+Z7DbkEFoZLaGcLDaskoOJ0nhIjA9A2i0Rg==",
+    "Microsoft.VisualStudio.Web.CodeGeneration.Core/2.1.6": {
+      "sha512": "JPE992UdbssvNZsjMyI8q5YGMyj2SsKckW6pMYPP6MB+kHOMWNs7J8efvNysTaMbzMeMgt+YhN+f3WIMoy4vhA==",
       "type": "package",
-      "path": "microsoft.visualstudio.web.codegeneration.core/2.1.1",
+      "path": "microsoft.visualstudio.web.codegeneration.core/2.1.6",
       "files": [
         ".signature.p7s",
         "lib/netstandard2.0/Microsoft.VisualStudio.Web.CodeGeneration.Core.dll",
         "lib/netstandard2.0/Microsoft.VisualStudio.Web.CodeGeneration.Core.xml",
-        "microsoft.visualstudio.web.codegeneration.core.2.1.1.nupkg.sha512",
+        "microsoft.visualstudio.web.codegeneration.core.2.1.6.nupkg.sha512",
         "microsoft.visualstudio.web.codegeneration.core.nuspec"
       ]
     },
-    "Microsoft.VisualStudio.Web.CodeGeneration.Design/2.1.1": {
-      "sha512": "d4xk6rWvW9HR2/QdwQ7OfrbmQcMi4EE3IlZT3JwfIRFdbtCXDFz+PCjs/qomLC+d+vlEXZuPvneX+G5FF9d1MA==",
+    "Microsoft.VisualStudio.Web.CodeGeneration.Design/2.1.6": {
+      "sha512": "jwxHCwjP8sL9vut657PZ6+nUJBHWQ2GIuqNwzlZ32W8TFDadR3GmB30AIL3sNny0JuoARnRJqCSCNESJ2sBieQ==",
       "type": "package",
-      "path": "microsoft.visualstudio.web.codegeneration.design/2.1.1",
+      "path": "microsoft.visualstudio.web.codegeneration.design/2.1.6",
       "files": [
         ".signature.p7s",
         "lib/net461/dotnet-aspnet-codegenerator-design.exe",
         "lib/net461/dotnet-aspnet-codegenerator-design.xml",
         "lib/netstandard2.0/dotnet-aspnet-codegenerator-design.dll",
         "lib/netstandard2.0/dotnet-aspnet-codegenerator-design.xml",
-        "microsoft.visualstudio.web.codegeneration.design.2.1.1.nupkg.sha512",
+        "microsoft.visualstudio.web.codegeneration.design.2.1.6.nupkg.sha512",
         "microsoft.visualstudio.web.codegeneration.design.nuspec",
         "runtimes/win-arm/lib/net461/dotnet-aspnet-codegenerator-design.exe",
         "runtimes/win-arm/lib/net461/dotnet-aspnet-codegenerator-design.xml",
@@ -7345,47 +7529,47 @@
         "runtimes/win7-x86/lib/net461/dotnet-aspnet-codegenerator-design.xml"
       ]
     },
-    "Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore/2.1.1": {
-      "sha512": "03wiQubZKezzT5OKgnExDOnzrtn/TQG4QDQfOJI524yZ2CCC/h4PxtPmO5FDH7x1qP/99EXLaZYojE9fZ7u9Yw==",
+    "Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore/2.1.6": {
+      "sha512": "qggrfjKX8ySpcxJ0vIKP4jkFVUloSlLVW+bQ5f4q1TiSn2R3HEoQ6C5Ch1+5TrpH1K4OvWeLgwAha3+nKbvSrA==",
       "type": "package",
-      "path": "microsoft.visualstudio.web.codegeneration.entityframeworkcore/2.1.1",
+      "path": "microsoft.visualstudio.web.codegeneration.entityframeworkcore/2.1.6",
       "files": [
         ".signature.p7s",
         "Templates/DbContext/NewLocalDbContext.cshtml",
         "lib/netstandard2.0/Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore.dll",
         "lib/netstandard2.0/Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore.xml",
-        "microsoft.visualstudio.web.codegeneration.entityframeworkcore.2.1.1.nupkg.sha512",
+        "microsoft.visualstudio.web.codegeneration.entityframeworkcore.2.1.6.nupkg.sha512",
         "microsoft.visualstudio.web.codegeneration.entityframeworkcore.nuspec"
       ]
     },
-    "Microsoft.VisualStudio.Web.CodeGeneration.Templating/2.1.1": {
-      "sha512": "8rubHXs2ufTJ205H2c9aSga/X8ToURtGguISBHEGkAcz/1Qp922jAaGvGvvJNhoXiBg/9K5VupkfkJDvnhN3/Q==",
+    "Microsoft.VisualStudio.Web.CodeGeneration.Templating/2.1.6": {
+      "sha512": "4Y3WaHD5nqo38YEh4LKyNuvhPRpwFYMxqWTTu8dVS9Apofc1vbHnZ4R3FhsXl7KH7nVyHq3d1F7cKRODec4e+w==",
       "type": "package",
-      "path": "microsoft.visualstudio.web.codegeneration.templating/2.1.1",
+      "path": "microsoft.visualstudio.web.codegeneration.templating/2.1.6",
       "files": [
         ".signature.p7s",
         "lib/netstandard2.0/Microsoft.VisualStudio.Web.CodeGeneration.Templating.dll",
         "lib/netstandard2.0/Microsoft.VisualStudio.Web.CodeGeneration.Templating.xml",
-        "microsoft.visualstudio.web.codegeneration.templating.2.1.1.nupkg.sha512",
+        "microsoft.visualstudio.web.codegeneration.templating.2.1.6.nupkg.sha512",
         "microsoft.visualstudio.web.codegeneration.templating.nuspec"
       ]
     },
-    "Microsoft.VisualStudio.Web.CodeGeneration.Utils/2.1.1": {
-      "sha512": "MRtBhRi0CQ36yi9r08l/j7I24a2bfiAW9N6fSq69M5mZFw1vjijPaM2NPokWv9hqT0aUCLNKCX7A6E20XgYE1w==",
+    "Microsoft.VisualStudio.Web.CodeGeneration.Utils/2.1.6": {
+      "sha512": "trsGbjULxnDvNHk6gcE0lb16K63n6NWbztxDLGmVvl0jGSAMPiwJNhSK/v6u/ukR/FucNPOwrOQSNim8UvxV9g==",
       "type": "package",
-      "path": "microsoft.visualstudio.web.codegeneration.utils/2.1.1",
+      "path": "microsoft.visualstudio.web.codegeneration.utils/2.1.6",
       "files": [
         ".signature.p7s",
         "lib/netstandard2.0/Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll",
         "lib/netstandard2.0/Microsoft.VisualStudio.Web.CodeGeneration.Utils.xml",
-        "microsoft.visualstudio.web.codegeneration.utils.2.1.1.nupkg.sha512",
+        "microsoft.visualstudio.web.codegeneration.utils.2.1.6.nupkg.sha512",
         "microsoft.visualstudio.web.codegeneration.utils.nuspec"
       ]
     },
-    "Microsoft.VisualStudio.Web.CodeGenerators.Mvc/2.1.1": {
-      "sha512": "LhsJrKf4fMqOyaVqAexbpkR6GmHDuVeek+s1NFGwFYFZAgSbnLmBt8DIw41zGbEXO/GYiPLTOTA7F1fJknsf6g==",
+    "Microsoft.VisualStudio.Web.CodeGenerators.Mvc/2.1.6": {
+      "sha512": "i33qFTwiTAkYOKx/movMXoL3t6z+mETIvsgCIrGzct1E9ZMQ6m1IU7yLs8oNMzmnOLBBhFXC631DP3+99Eth1g==",
       "type": "package",
-      "path": "microsoft.visualstudio.web.codegenerators.mvc/2.1.1",
+      "path": "microsoft.visualstudio.web.codegenerators.mvc/2.1.6",
       "files": [
         ".signature.p7s",
         "Generators/ParameterDefinitions/area.json",
@@ -7539,7 +7723,7 @@
         "lib/netstandard2.0/Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll",
         "lib/netstandard2.0/Microsoft.VisualStudio.Web.CodeGenerators.Mvc.xml",
         "lib/netstandard2.0/identitygeneratorfilesconfig.json",
-        "microsoft.visualstudio.web.codegenerators.mvc.2.1.1.nupkg.sha512",
+        "microsoft.visualstudio.web.codegenerators.mvc.2.1.6.nupkg.sha512",
         "microsoft.visualstudio.web.codegenerators.mvc.nuspec"
       ]
     },
@@ -7851,6 +8035,28 @@
         "nuget.frameworks.nuspec"
       ]
     },
+    "Pivotal.Discovery.ClientCore/2.1.1": {
+      "sha512": "8BZmnXG7uo9H3n0FgkPs0CTS6g2xOZ+Bje+atdrmL+NepuEOtr+dBFZu0UegpcNUZtVZYzCOnEvzZ8qPtr+jIA==",
+      "type": "package",
+      "path": "pivotal.discovery.clientcore/2.1.1",
+      "files": [
+        ".signature.p7s",
+        "lib/netstandard2.0/Pivotal.Discovery.ClientCore.dll",
+        "pivotal.discovery.clientcore.2.1.1.nupkg.sha512",
+        "pivotal.discovery.clientcore.nuspec"
+      ]
+    },
+    "Pivotal.Discovery.EurekaBase/2.1.1": {
+      "sha512": "dQqzH3VvdRuuqOfCN6yQQ0XUHEXH6jUiCVZphyfVR33j4LP0ub05n1HMqFuRvmo0iZNvAT1LLm4MMnFb8R/PXQ==",
+      "type": "package",
+      "path": "pivotal.discovery.eurekabase/2.1.1",
+      "files": [
+        ".signature.p7s",
+        "lib/netstandard2.0/Pivotal.Discovery.EurekaBase.dll",
+        "pivotal.discovery.eurekabase.2.1.1.nupkg.sha512",
+        "pivotal.discovery.eurekabase.nuspec"
+      ]
+    },
     "Pomelo.EntityFrameworkCore.MySql/2.1.2": {
       "sha512": "LyM3NFH3Tj1ppHZ9QdGoMxA8Ga+kouC7r7QwgPFxWwzsMOsns8Y935u6YQjDBNaPlClTDJSm1V7aOnidxtAMPw==",
       "type": "package",
@@ -7891,44 +8097,47 @@
         "remotion.linq.nuspec"
       ]
     },
-    "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {
-      "sha512": "HdSSp5MnJSsg08KMfZThpuLPJpPwE5hBXvHwoKWosyHHfe8Mh5WKT0ylEOf6yNzX6Ngjxe4Whkafh5q7Ymac4Q==",
+    "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.2": {
+      "sha512": "jwcVUu4ELwy6ObG6ChIFz3PeRH1mKZW65o+FellG99FUwCmnnjdGkIFnVoeHPIvyue/lf1y9Zgw2axylGCP38g==",
       "type": "package",
-      "path": "runtime.debian.8-x64.runtime.native.system.security.cryptography.openssl/4.3.0",
+      "path": "runtime.debian.8-x64.runtime.native.system.security.cryptography.openssl/4.3.2",
       "files": [
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
-        "runtime.debian.8-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
+        "runtime.debian.8-x64.runtime.native.system.security.cryptography.openssl.4.3.2.nupkg.sha512",
         "runtime.debian.8-x64.runtime.native.system.security.cryptography.openssl.nuspec",
         "runtimes/debian.8-x64/native/System.Security.Cryptography.Native.OpenSsl.so"
       ]
     },
-    "runtime.fedora.23-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {
-      "sha512": "+yH1a49wJMy8Zt4yx5RhJrxO/DBDByAiCzNwiETI+1S4mPdCu0OY4djdciC7Vssk0l22wQaDLrXxXkp+3+7bVA==",
+    "runtime.fedora.23-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.2": {
+      "sha512": "oTXKD09aSTGbWlK39DOPil/EOH7fJvKebL9jo8OjeytcUcnK9WLsQeRw+6KBBgNiRlvFaRW+eC1sdXeKphleRg==",
       "type": "package",
-      "path": "runtime.fedora.23-x64.runtime.native.system.security.cryptography.openssl/4.3.0",
+      "path": "runtime.fedora.23-x64.runtime.native.system.security.cryptography.openssl/4.3.2",
       "files": [
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
-        "runtime.fedora.23-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
+        "runtime.fedora.23-x64.runtime.native.system.security.cryptography.openssl.4.3.2.nupkg.sha512",
         "runtime.fedora.23-x64.runtime.native.system.security.cryptography.openssl.nuspec",
         "runtimes/fedora.23-x64/native/System.Security.Cryptography.Native.OpenSsl.so"
       ]
     },
-    "runtime.fedora.24-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {
-      "sha512": "c3YNH1GQJbfIPJeCnr4avseugSqPrxwIqzthYyZDN6EuOyNOzq+y2KSUfRcXauya1sF4foESTgwM5e1A8arAKw==",
+    "runtime.fedora.24-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.2": {
+      "sha512": "LyTiy6iKlrsjhI4UBIeORHimVkI4e3t2qkAHWH/nxNggjL3lPT7WX40Ncc1oi/wWvmbcX3vPhMeyzPGzxQWwtA==",
       "type": "package",
-      "path": "runtime.fedora.24-x64.runtime.native.system.security.cryptography.openssl/4.3.0",
+      "path": "runtime.fedora.24-x64.runtime.native.system.security.cryptography.openssl/4.3.2",
       "files": [
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
-        "runtime.fedora.24-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
+        "runtime.fedora.24-x64.runtime.native.system.security.cryptography.openssl.4.3.2.nupkg.sha512",
         "runtime.fedora.24-x64.runtime.native.system.security.cryptography.openssl.nuspec",
         "runtimes/fedora.24-x64/native/System.Security.Cryptography.Native.OpenSsl.so"
       ]
     },
     "runtime.native.System/4.3.0": {
-      "sha512": "c/qWt2LieNZIj1jGnVNsE2Kl23Ya2aSTBuXMD6V7k9KWr6l16Tqdwq+hJScEpWER9753NWC8h96PaVNY5Ld7Jw==",
+      "sha512": "MgzhWOdGEZYWaUI9dPzcRj3SBkX2c8EaeZa+IvYFTtgtTZ+fFiU12ivthPlb6wyW/jBd+jFHoj08cJj4b8HASg==",
       "type": "package",
       "path": "runtime.native.system/4.3.0",
       "files": [
@@ -7953,7 +8162,7 @@
       ]
     },
     "runtime.native.System.IO.Compression/4.3.0": {
-      "sha512": "INBPonS5QPEgn7naufQFXJEp3zX6L4bwHgJ/ZH78aBTpeNfQMtf7C6VrAFhlq2xxWBveIOWyFzQjJ8XzHMhdOQ==",
+      "sha512": "6Pt4uQZ18uGby2RJWYZfzTSb32Evgbp0By+t/Hr/PN12dO1gChjTdnIBFj7mAIkzGi1Tkn66ear0MyxCx0JL3A==",
       "type": "package",
       "path": "runtime.native.system.io.compression/4.3.0",
       "files": [
@@ -7965,7 +8174,7 @@
       ]
     },
     "runtime.native.System.Net.Http/4.3.0": {
-      "sha512": "ZVuZJqnnegJhd2k/PtAbbIcZ3aZeITq3sj06oKfMBSfphW3HDmk/t4ObvbOk/JA/swGR0LNqMksAh/f7gpTROg==",
+      "sha512": "Giybis3CtgkIGyquqtbM7/mCpifFwH1ZQKIQpy4TOvDaPvq4ZgpspkuK8lJ3lsk655uNqwRtdVMSuOGqOO8boA==",
       "type": "package",
       "path": "runtime.native.system.net.http/4.3.0",
       "files": [
@@ -7977,7 +8186,7 @@
       ]
     },
     "runtime.native.System.Security.Cryptography.Apple/4.3.0": {
-      "sha512": "DloMk88juo0OuOWr56QG7MNchmafTLYWvABy36izkrLI5VledI0rq28KGs1i9wbpeT9NPQrx/wTf8U2vazqQ3Q==",
+      "sha512": "zarBQ7UhK7cDZvswpgp/BPadRQb2FGGizbst57IT0laXtBvdXODPjADzIZ6nciZ8q3u81orIHlxCA6k8xdu4XQ==",
       "type": "package",
       "path": "runtime.native.system.security.cryptography.apple/4.3.0",
       "files": [
@@ -7988,44 +8197,47 @@
         "runtime.native.system.security.cryptography.apple.nuspec"
       ]
     },
-    "runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {
-      "sha512": "NS1U+700m4KFRHR5o4vo9DSlTmlCKu/u7dtE5sUHVIPB+xpXxYQvgBgA6wEIeCz6Yfn0Z52/72WYsToCEPJnrw==",
+    "runtime.native.System.Security.Cryptography.OpenSsl/4.3.2": {
+      "sha512": "o0rS2+Z+/K6X/L6levOGswZgqYq4IppWwNyiQTFuZzz3om4Zxu+2txF8wnH98gh0G6b4RHriVMkay6Pdt9KSOg==",
       "type": "package",
-      "path": "runtime.native.system.security.cryptography.openssl/4.3.0",
+      "path": "runtime.native.system.security.cryptography.openssl/4.3.2",
       "files": [
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/netstandard1.0/_._",
-        "runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
+        "runtime.native.system.security.cryptography.openssl.4.3.2.nupkg.sha512",
         "runtime.native.system.security.cryptography.openssl.nuspec"
       ]
     },
-    "runtime.opensuse.13.2-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {
-      "sha512": "b3pthNgxxFcD+Pc0WSEoC0+md3MyhRS6aCEeenvNE3Fdw1HyJ18ZhRFVJJzIeR/O/jpxPboB805Ho0T3Ul7w8A==",
+    "runtime.opensuse.13.2-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.2": {
+      "sha512": "zghz4HAA35jmQL0mXpadSpI2U1zuJpnFNj86spdVew11YmBVeZXy7hY8/wX8K6ki1mug5MsoUh+EHn1UarO2Pg==",
       "type": "package",
-      "path": "runtime.opensuse.13.2-x64.runtime.native.system.security.cryptography.openssl/4.3.0",
+      "path": "runtime.opensuse.13.2-x64.runtime.native.system.security.cryptography.openssl/4.3.2",
       "files": [
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
-        "runtime.opensuse.13.2-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
+        "runtime.opensuse.13.2-x64.runtime.native.system.security.cryptography.openssl.4.3.2.nupkg.sha512",
         "runtime.opensuse.13.2-x64.runtime.native.system.security.cryptography.openssl.nuspec",
         "runtimes/opensuse.13.2-x64/native/System.Security.Cryptography.Native.OpenSsl.so"
       ]
     },
-    "runtime.opensuse.42.1-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {
-      "sha512": "KeLz4HClKf+nFS7p/6Fi/CqyLXh81FpiGzcmuS8DGi9lUqSnZ6Es23/gv2O+1XVGfrbNmviF7CckBpavkBoIFQ==",
+    "runtime.opensuse.42.1-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.2": {
+      "sha512": "v3VMGmbNcNwb041U/mdendRwQX67pi4veeJ4vo8GzDSW/1jtkNMLXdTT7+qazL0J6xfNh76IKVHA/fuDPDcfcA==",
       "type": "package",
-      "path": "runtime.opensuse.42.1-x64.runtime.native.system.security.cryptography.openssl/4.3.0",
+      "path": "runtime.opensuse.42.1-x64.runtime.native.system.security.cryptography.openssl/4.3.2",
       "files": [
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
-        "runtime.opensuse.42.1-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
+        "runtime.opensuse.42.1-x64.runtime.native.system.security.cryptography.openssl.4.3.2.nupkg.sha512",
         "runtime.opensuse.42.1-x64.runtime.native.system.security.cryptography.openssl.nuspec",
         "runtimes/opensuse.42.1-x64/native/System.Security.Cryptography.Native.OpenSsl.so"
       ]
     },
     "runtime.osx.10.10-x64.runtime.native.System.Security.Cryptography.Apple/4.3.0": {
-      "sha512": "kVXCuMTrTlxq4XOOMAysuNwsXWpYeboGddNGpIgNSZmv1b6r/s/DPk0fYMB7Q5Qo4bY68o48jt4T4y5BVecbCQ==",
+      "sha512": "bFK/96oTdfWX1wpxLfESUgOK+y1XCYMkCOvjn8/mYPXgFgPCddHBaXkvjfphCKEifIjNLFjThcKd2BivQiRviw==",
       "type": "package",
       "path": "runtime.osx.10.10-x64.runtime.native.system.security.cryptography.apple/4.3.0",
       "files": [
@@ -8036,62 +8248,67 @@
         "runtimes/osx.10.10-x64/native/System.Security.Cryptography.Native.Apple.dylib"
       ]
     },
-    "runtime.osx.10.10-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {
-      "sha512": "X7IdhILzr4ROXd8mI1BUCQMSHSQwelUlBjF1JyTKCjXaOGn2fB4EKBxQbCK2VjO3WaWIdlXZL3W6TiIVnrhX4g==",
+    "runtime.osx.10.10-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.2": {
+      "sha512": "CjjyXodztYFVtdP5T4SbkzU9CAnaViKLjrq1yXbmRYylDrWjisykyJQGeObpUh+1euSHM398vy6niTrp4/Q5NQ==",
       "type": "package",
-      "path": "runtime.osx.10.10-x64.runtime.native.system.security.cryptography.openssl/4.3.0",
+      "path": "runtime.osx.10.10-x64.runtime.native.system.security.cryptography.openssl/4.3.2",
       "files": [
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
-        "runtime.osx.10.10-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
+        "runtime.osx.10.10-x64.runtime.native.system.security.cryptography.openssl.4.3.2.nupkg.sha512",
         "runtime.osx.10.10-x64.runtime.native.system.security.cryptography.openssl.nuspec",
         "runtimes/osx.10.10-x64/native/System.Security.Cryptography.Native.OpenSsl.dylib"
       ]
     },
-    "runtime.rhel.7-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {
-      "sha512": "nyFNiCk/r+VOiIqreLix8yN+q3Wga9+SE8BCgkf+2BwEKiNx6DyvFjCgkfV743/grxv8jHJ8gUK4XEQw7yzRYg==",
+    "runtime.rhel.7-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.2": {
+      "sha512": "KunbS3GbMfp+QMYPUscAOPyGaOApz04dEg/ejClWMdawggfXAYoik3t5VGAWxWDIlOJ91uvAHV4PZ3Vn5rLE8g==",
       "type": "package",
-      "path": "runtime.rhel.7-x64.runtime.native.system.security.cryptography.openssl/4.3.0",
+      "path": "runtime.rhel.7-x64.runtime.native.system.security.cryptography.openssl/4.3.2",
       "files": [
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
-        "runtime.rhel.7-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
+        "runtime.rhel.7-x64.runtime.native.system.security.cryptography.openssl.4.3.2.nupkg.sha512",
         "runtime.rhel.7-x64.runtime.native.system.security.cryptography.openssl.nuspec",
         "runtimes/rhel.7-x64/native/System.Security.Cryptography.Native.OpenSsl.so"
       ]
     },
-    "runtime.ubuntu.14.04-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {
-      "sha512": "ytoewC6wGorL7KoCAvRfsgoJPJbNq+64k2SqW6JcOAebWsFUvCCYgfzQMrnpvPiEl4OrblUlhF2ji+Q1+SVLrQ==",
+    "runtime.ubuntu.14.04-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.2": {
+      "sha512": "zUt7p0TegAhlIatnytLbMIXUiDiNPZy4PZlGOJ8PTHhFOb86T/uNTzNHxceBOq3vlbNV/SVj4wyUiog8J7lShw==",
       "type": "package",
-      "path": "runtime.ubuntu.14.04-x64.runtime.native.system.security.cryptography.openssl/4.3.0",
+      "path": "runtime.ubuntu.14.04-x64.runtime.native.system.security.cryptography.openssl/4.3.2",
       "files": [
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
-        "runtime.ubuntu.14.04-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
+        "runtime.ubuntu.14.04-x64.runtime.native.system.security.cryptography.openssl.4.3.2.nupkg.sha512",
         "runtime.ubuntu.14.04-x64.runtime.native.system.security.cryptography.openssl.nuspec",
         "runtimes/ubuntu.14.04-x64/native/System.Security.Cryptography.Native.OpenSsl.so"
       ]
     },
-    "runtime.ubuntu.16.04-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {
-      "sha512": "I8bKw2I8k58Wx7fMKQJn2R8lamboCAiHfHeV/pS65ScKWMMI0+wJkLYlEKvgW1D/XvSl/221clBoR2q9QNNM7A==",
+    "runtime.ubuntu.16.04-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.2": {
+      "sha512": "1/woqfYA5HHtzgmJwBxIXU4qfplVH1MUE6+nUDmkAE1OLCfoiXbWVDJjWjIdhjFqPGza68ey/vpCFBtk9PENZg==",
       "type": "package",
-      "path": "runtime.ubuntu.16.04-x64.runtime.native.system.security.cryptography.openssl/4.3.0",
+      "path": "runtime.ubuntu.16.04-x64.runtime.native.system.security.cryptography.openssl/4.3.2",
       "files": [
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
-        "runtime.ubuntu.16.04-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
+        "runtime.ubuntu.16.04-x64.runtime.native.system.security.cryptography.openssl.4.3.2.nupkg.sha512",
         "runtime.ubuntu.16.04-x64.runtime.native.system.security.cryptography.openssl.nuspec",
         "runtimes/ubuntu.16.04-x64/native/System.Security.Cryptography.Native.OpenSsl.so"
       ]
     },
-    "runtime.ubuntu.16.10-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {
-      "sha512": "VB5cn/7OzUfzdnC8tqAIMQciVLiq2epm2NrAm1E9OjNRyG4lVhfR61SMcLizejzQP8R8Uf/0l5qOIbUEi+RdEg==",
+    "runtime.ubuntu.16.10-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.2": {
+      "sha512": "X+DmqHjv9Zz+JKjVevURQFdtjg/sSYjkiSwjPEezo+7SfewHKmwNVd1hV3fNnOP+VFxTU7SpUok3atC5QI7Uvg==",
       "type": "package",
-      "path": "runtime.ubuntu.16.10-x64.runtime.native.system.security.cryptography.openssl/4.3.0",
+      "path": "runtime.ubuntu.16.10-x64.runtime.native.system.security.cryptography.openssl/4.3.2",
       "files": [
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
-        "runtime.ubuntu.16.10-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
+        "runtime.ubuntu.16.10-x64.runtime.native.system.security.cryptography.openssl.4.3.2.nupkg.sha512",
         "runtime.ubuntu.16.10-x64.runtime.native.system.security.cryptography.openssl.nuspec",
         "runtimes/ubuntu.16.10-x64/native/System.Security.Cryptography.Native.OpenSsl.so"
       ]
@@ -8138,8 +8355,78 @@
         "version.txt"
       ]
     },
+    "Steeltoe.CloudFoundry.ConnectorBase/2.1.1": {
+      "sha512": "RRAwPI2RaUvY5/Z7sWyDes0EFzT8tQawhkbtxUQyNj0UFollPiGxmX16hnT9J56O9nVHMbQoXsoDLvbwEzcpAw==",
+      "type": "package",
+      "path": "steeltoe.cloudfoundry.connectorbase/2.1.1",
+      "files": [
+        ".signature.p7s",
+        "lib/netstandard2.0/Steeltoe.CloudFoundry.ConnectorBase.dll",
+        "lib/netstandard2.0/Steeltoe.CloudFoundry.ConnectorBase.xml",
+        "steeltoe.cloudfoundry.connectorbase.2.1.1.nupkg.sha512",
+        "steeltoe.cloudfoundry.connectorbase.nuspec"
+      ]
+    },
+    "Steeltoe.Common/2.1.1": {
+      "sha512": "XW8ipk5UktpKm0eVzfpz0oXVIbDzlN3cq4uFMsC86PlxWvlmT5FITyzWCiDOjpnh3sQWRxb1fSXNHkEMEhmcEg==",
+      "type": "package",
+      "path": "steeltoe.common/2.1.1",
+      "files": [
+        ".signature.p7s",
+        "lib/netstandard2.0/Steeltoe.Common.dll",
+        "lib/netstandard2.0/Steeltoe.Common.xml",
+        "steeltoe.common.2.1.1.nupkg.sha512",
+        "steeltoe.common.nuspec"
+      ]
+    },
+    "Steeltoe.Common.Http/2.1.1": {
+      "sha512": "briRyU8FUqfr+T748ZIiSCErC444Ego4oWPwfRdLIvVcIeVgtwBXsl6wznSDKALgXbykbtOb19v0FkpLXHxKMg==",
+      "type": "package",
+      "path": "steeltoe.common.http/2.1.1",
+      "files": [
+        ".signature.p7s",
+        "lib/netstandard2.0/Steeltoe.Common.Http.dll",
+        "lib/netstandard2.0/Steeltoe.Common.Http.xml",
+        "steeltoe.common.http.2.1.1.nupkg.sha512",
+        "steeltoe.common.http.nuspec"
+      ]
+    },
+    "Steeltoe.Discovery.EurekaBase/2.1.1": {
+      "sha512": "xkAih8e6UQHGFNR7zBq5tg2OvzEH3lmKi9J/G5PmskPla49hdIyRfrfaQROLxK6reMcIEbc/jWiO5wqlG3JqzQ==",
+      "type": "package",
+      "path": "steeltoe.discovery.eurekabase/2.1.1",
+      "files": [
+        ".signature.p7s",
+        "lib/netstandard2.0/Steeltoe.Discovery.EurekaBase.dll",
+        "steeltoe.discovery.eurekabase.2.1.1.nupkg.sha512",
+        "steeltoe.discovery.eurekabase.nuspec"
+      ]
+    },
+    "Steeltoe.Extensions.Configuration.CloudFoundryBase/2.1.1": {
+      "sha512": "V8TUa3N5ffZTTfEc2ABz35xc+xncSTq4hy/KAbDqRO+XTKvxhMnRqrYTSOK7JTaoLYyxahvUbTuW/e4TEorFDw==",
+      "type": "package",
+      "path": "steeltoe.extensions.configuration.cloudfoundrybase/2.1.1",
+      "files": [
+        ".signature.p7s",
+        "lib/netstandard2.0/Steeltoe.Extensions.Configuration.CloudFoundryBase.dll",
+        "lib/netstandard2.0/Steeltoe.Extensions.Configuration.CloudFoundryBase.xml",
+        "steeltoe.extensions.configuration.cloudfoundrybase.2.1.1.nupkg.sha512",
+        "steeltoe.extensions.configuration.cloudfoundrybase.nuspec"
+      ]
+    },
+    "Steeltoe.Extensions.Configuration.ConfigServer/1.1.1": {
+      "sha512": "FcrZ8zsgv+Pm5uqCmX1SNt6tyVYchi9WFXBxTDeugLYN61sfzQ3Ck1ZP7DQnns/19SbFQsaXb0b3Bh71xHCrUQ==",
+      "type": "package",
+      "path": "steeltoe.extensions.configuration.configserver/1.1.1",
+      "files": [
+        "lib/net452/Steeltoe.Extensions.Configuration.ConfigServer.dll",
+        "lib/netstandard1.3/Steeltoe.Extensions.Configuration.ConfigServer.dll",
+        "steeltoe.extensions.configuration.configserver.1.1.1.nupkg.sha512",
+        "steeltoe.extensions.configuration.configserver.nuspec"
+      ]
+    },
     "System.AppContext/4.3.0": {
-      "sha512": "fKC+rmaLfeIzUhagxY17Q9siv/sPrjjKcfNg1Ic8IlQkZLipo8ljcaZQu4VtI4Jqbzjc2VTjzGLF6WmsRXAEgA==",
+      "sha512": "zZcJe/cKybl/uYYyGoYmJP0OgsdAcHkyOo0RfySg4P1msSEaSXMxhgOKM779hbv382nEP8idXw2WJvzEmtsq1A==",
       "type": "package",
       "path": "system.appcontext/4.3.0",
       "files": [
@@ -8220,7 +8507,7 @@
       ]
     },
     "System.Collections/4.3.0": {
-      "sha512": "3Dcj85/TBdVpL5Zr+gEEBUuFe2icOnLalmEh9hfck1PTYbbyWuZgh4fmm2ysCLTrqLQw6t3TgTyJ+VLp+Qb+Lw==",
+      "sha512": "jG/+bAuASZjUxPnFBmPQvl6rTcBzhJCqGsBbLK8fU0LCNPBeLkfGLmMEX1aSWwoMpz9dXpUQaUpPTSXt1GcDIw==",
       "type": "package",
       "path": "system.collections/4.3.0",
       "files": [
@@ -8286,7 +8573,7 @@
       ]
     },
     "System.Collections.Concurrent/4.3.0": {
-      "sha512": "ztl69Xp0Y/UXCL+3v3tEU+lIy+bvjKNUmopn1wep/a291pVPK7dxBd6T7WnlQqRog+d1a/hSsgRsmFnIBKTPLQ==",
+      "sha512": "Ym8AihVfmwKmNf6Kl2u+/mbAs2zjthx6kEjWCOS/LP9uamAWavZgn6rdg/VuZVEE8PjCPE7lZTwyrq2NOl/GhQ==",
       "type": "package",
       "path": "system.collections.concurrent/4.3.0",
       "files": [
@@ -8374,7 +8661,7 @@
       ]
     },
     "System.Collections.NonGeneric/4.3.0": {
-      "sha512": "prtjIEMhGUnQq6RnPEYLpFt8AtLbp9yq2zxOSrY7KJJZrw25Fi97IzBqY7iqssbM61Ek5b8f3MG/sG1N2sN5KA==",
+      "sha512": "VyhoZyHZRPFiHZ6ySqmdM1h5n366ftfZuDzvYHjZ+1dwEbiaLgGFK9UfbLl+HdH7SrgG9OdZOiZguDfKVsXwiA==",
       "type": "package",
       "path": "system.collections.nongeneric/4.3.0",
       "files": [
@@ -8411,7 +8698,7 @@
       ]
     },
     "System.Collections.Specialized/4.3.0": {
-      "sha512": "Epx8PoVZR0iuOnJJDzp7pWvdfMMOAvpUo95pC4ScH2mJuXkKA2Y4aR3cG9qt2klHgSons1WFh4kcGW7cSXvrxg==",
+      "sha512": "ihkul6AXJ6wyGbbYv8xDmAGCTVzQ5DQW9IEVqqyq2xL9c0Cmczt5i4Mf7K2CO/hh3xm5CRoD5EMFf7Sz2pGJCg==",
       "type": "package",
       "path": "system.collections.specialized/4.3.0",
       "files": [
@@ -8669,7 +8956,7 @@
       ]
     },
     "System.Console/4.3.0": {
-      "sha512": "DHDrIxiqk1h03m6khKWV2X8p/uvN79rgSqpilL6uzpmSfxfU5ng8VcPtW4qsDsQDHiTv6IPV9TmD5M/vElPNLg==",
+      "sha512": "TmtDvuohMBhboksT3sXhK8kutdiXzGt/nSv+80v8rbSlmvgqzqZoP2IvXqylLiphA3vqIt2V7Wt8uqdxQeoS3Q==",
       "type": "package",
       "path": "system.console/4.3.0",
       "files": [
@@ -8778,7 +9065,7 @@
       ]
     },
     "System.Diagnostics.Contracts/4.3.0": {
-      "sha512": "eelRRbnm+OloiQvp9CXS0ixjNQldjjkHO4iIkR5XH2VIP8sUB/SIpa1TdUW6/+HDcQ+MlhP3pNa1u5SbzYuWGA==",
+      "sha512": "Jbd5ifj5DDDd4wazsmflXIcAOin9Up5Kx6rFf7KAEMkZb226/xuEVK/0Eml58GlCmOE1x6cShI7OXNHFGNO2XA==",
       "type": "package",
       "path": "system.diagnostics.contracts/4.3.0",
       "files": [
@@ -8836,7 +9123,7 @@
       ]
     },
     "System.Diagnostics.Debug/4.3.0": {
-      "sha512": "ZUhUOdqmaG5Jk3Xdb8xi5kIyQYAA4PnTNlHx1mu9ZY3qv4ELIdKbnL/akbGaKi2RnNUWaZsAs31rvzFdewTj2g==",
+      "sha512": "gTN9QwO8jISWGpvJmDJd9em55FYI7YepE8gCwnJTznPmBgyWEVM/jvvw3zFRML8NEH6cySUZ+Y6xsJU3wvOZng==",
       "type": "package",
       "path": "system.diagnostics.debug/4.3.0",
       "files": [
@@ -8966,7 +9253,7 @@
       ]
     },
     "System.Diagnostics.StackTrace/4.3.0": {
-      "sha512": "BiHg0vgtd35/DM9jvtaC1eKRpWZxr0gcQd643ABG7GnvSlf5pOkY2uyd42mMOJoOmKvnpNj0F4tuoS1pacTwYw==",
+      "sha512": "nSEHXOybklpB2R1k/4ElGwqbE7mdNoQ4kzBSi4CsOL8J6hPkA6F8yrvD2MKIixoXN6DlGxnkWo2R0TQ+xLo7Lg==",
       "type": "package",
       "path": "system.diagnostics.stacktrace/4.3.0",
       "files": [
@@ -9004,7 +9291,7 @@
       ]
     },
     "System.Diagnostics.Tools/4.3.0": {
-      "sha512": "UUvkJfSYJMM6x527dJg2VyWPSRqIVB0Z7dbjHst1zmwTXz5CcXSYJFWRpuigfbO1Lf7yfZiIaEUesfnl/g5EyA==",
+      "sha512": "XoiXQ6iMicscGS7cifLJREo5XRBuNCCJyLUGqCZdUo3MHDVANRtuUYGKMg7b5Ush52s89+jRi10ujdAJk8fOcA==",
       "type": "package",
       "path": "system.diagnostics.tools/4.3.0",
       "files": [
@@ -9059,7 +9346,7 @@
       ]
     },
     "System.Diagnostics.Tracing/4.3.0": {
-      "sha512": "rswfv0f/Cqkh78rA5S8eN8Neocz234+emGCtTF3lxPY96F+mmmUen6tbn0glN6PMvlKQb9bPAY5e9u7fgPTkKw==",
+      "sha512": "XJx0poOhRae6qpAGybC3TMS39+A0nrUI+cMNEYavxTP4YhpYduyHZy/dt9/g99fSMF776hTLLhzrAHTYybTByg==",
       "type": "package",
       "path": "system.diagnostics.tracing/4.3.0",
       "files": [
@@ -9147,7 +9434,7 @@
       ]
     },
     "System.Dynamic.Runtime/4.3.0": {
-      "sha512": "SNVi1E/vfWUAs/WYKhE9+qlS6KqK0YVhnlT0HQtr8pMIA8YX3lwy3uPMownDwdYISBdmAF/2holEIldVp85Wag==",
+      "sha512": "gJXERrBY7dt5hfCJ70WH5soPw2gGOqX0NB6Ih/zGm8i539w4fcrzMfLH3nJsEbvDM6cGvvUNrEHVJzUp0cE09w==",
       "type": "package",
       "path": "system.dynamic.runtime/4.3.0",
       "files": [
@@ -9216,7 +9503,7 @@
       ]
     },
     "System.Globalization/4.3.0": {
-      "sha512": "kYdVd2f2PAdFGblzFswE4hkNANJBKRmsfa2X5LG2AcWE1c7/4t0pYae1L8vfZ5xvE2nK/R9JprtToA61OSHWIg==",
+      "sha512": "DX8S3PktGf25Y8ZQgm51EMAdxvPdob3KyHKnCeZEEkIKa3X2niQFFXCIljDwvTT3SxSTT9H2VZpmgAZFl5B69w==",
       "type": "package",
       "path": "system.globalization/4.3.0",
       "files": [
@@ -9282,7 +9569,7 @@
       ]
     },
     "System.Globalization.Calendars/4.3.0": {
-      "sha512": "GUlBtdOWT4LTV3I+9/PJW+56AnnChTaOqqTLFtdmype/L500M2LIyXgmtd9X2P2VOkmJd5c67H5SaC2QcL1bFA==",
+      "sha512": "2caMIMMWQekvBLvwIDyl1ET/URWkQTn3RIK+p5TSRLFboqg6vhC2kWp+LgqQ1UDydXF1BEF0vSHJcMF5Iq2gGw==",
       "type": "package",
       "path": "system.globalization.calendars/4.3.0",
       "files": [
@@ -9318,7 +9605,7 @@
       ]
     },
     "System.Globalization.Extensions/4.3.0": {
-      "sha512": "FhKmdR6MPG+pxow6wGtNAWdZh7noIOpdD5TwQ3CprzgIE1bBBoim0vbR1+AWsWjQmU7zXHgQo4TWSP6lCeiWcQ==",
+      "sha512": "SOBmP06GctPPqnnHZlrURZ23njS+qkXpVNF+/EZhtPiieTZOy9/a83fm7NLAJj+bxjy7r3zcRCzCR+IbHrYD8A==",
       "type": "package",
       "path": "system.globalization.extensions/4.3.0",
       "files": [
@@ -9356,18 +9643,28 @@
         "system.globalization.extensions.nuspec"
       ]
     },
-    "System.IdentityModel.Tokens.Jwt/5.2.0": {
-      "sha512": "E8tNMfMWPvlSF5fvmMIVZZHlGuIZzE5uktuR+GN2gFdngh0k6xoZquxfjKC02d0NqfsshNQVTCdSKXD5e9/lpA==",
+    "System.IdentityModel.Tokens.Jwt/5.3.0": {
+      "sha512": "PZT7Vf5b3jlwFgQnTV93tKeoLQj/Qfo/tKWHZXCprUj2ZNeyPxp47IhwCqqFcuAtuTX5FOk3dRHk8gC+KjpmGA==",
       "type": "package",
-      "path": "system.identitymodel.tokens.jwt/5.2.0",
+      "path": "system.identitymodel.tokens.jwt/5.3.0",
       "files": [
+        ".signature.p7s",
         "lib/net45/System.IdentityModel.Tokens.Jwt.dll",
+        "lib/net45/System.IdentityModel.Tokens.Jwt.pdb",
         "lib/net45/System.IdentityModel.Tokens.Jwt.xml",
         "lib/net451/System.IdentityModel.Tokens.Jwt.dll",
+        "lib/net451/System.IdentityModel.Tokens.Jwt.pdb",
         "lib/net451/System.IdentityModel.Tokens.Jwt.xml",
+        "lib/net461/System.IdentityModel.Tokens.Jwt.dll",
+        "lib/net461/System.IdentityModel.Tokens.Jwt.pdb",
+        "lib/net461/System.IdentityModel.Tokens.Jwt.xml",
         "lib/netstandard1.4/System.IdentityModel.Tokens.Jwt.dll",
+        "lib/netstandard1.4/System.IdentityModel.Tokens.Jwt.pdb",
         "lib/netstandard1.4/System.IdentityModel.Tokens.Jwt.xml",
-        "system.identitymodel.tokens.jwt.5.2.0.nupkg.sha512",
+        "lib/netstandard2.0/System.IdentityModel.Tokens.Jwt.dll",
+        "lib/netstandard2.0/System.IdentityModel.Tokens.Jwt.pdb",
+        "lib/netstandard2.0/System.IdentityModel.Tokens.Jwt.xml",
+        "system.identitymodel.tokens.jwt.5.3.0.nupkg.sha512",
         "system.identitymodel.tokens.jwt.nuspec"
       ]
     },
@@ -9389,7 +9686,7 @@
       ]
     },
     "System.IO/4.3.0": {
-      "sha512": "3qjaHvxQPDpSOYICjUoTsmoq5u6QJAFRUITgeT/4gqkF1bajbSmb1kwSxEA8AHlofqgcKJcM8udgieRNhaJ5Cg==",
+      "sha512": "0ykf1IN+hIDHlkOWadV2J5DHlc3jd3qwHG9KdkRnIXh1TLsaEz2QsBFQ1Zk4I/t8ZtMZNTLDlTwB3rNDww6lqQ==",
       "type": "package",
       "path": "system.io/4.3.0",
       "files": [
@@ -9468,7 +9765,7 @@
       ]
     },
     "System.IO.Compression/4.3.0": {
-      "sha512": "YHndyoiV90iu4iKG115ibkhrG+S3jBm8Ap9OwoUAzO5oPDAWcr0SFwQFm0HjM8WkEZWo0zvLTyLmbvTkW1bXgg==",
+      "sha512": "rGDoIAl5tYPngJuDfKARpjygAxQWRu34RZuNeWJGdHQvEztTJho98dKF+pv7PHp2JHfMR44tTCugXxC/Km9X1w==",
       "type": "package",
       "path": "system.io.compression/4.3.0",
       "files": [
@@ -9537,7 +9834,7 @@
       ]
     },
     "System.IO.FileSystem/4.3.0": {
-      "sha512": "3wEMARTnuio+ulnvi+hkRNROYwa1kylvYahhcLk4HSoVdl+xxTFVeVlYOfLwrDPImGls0mDqbMhrza8qnWPTdA==",
+      "sha512": "WzSWX+pCPNR2W0NiGhFxjOIuUuVFPjqpp3HLe8u6WYw+eLQWAHQK5DVWgvLEtjLw7NrBwSUZ9tVKYa6pn1lm/g==",
       "type": "package",
       "path": "system.io.filesystem/4.3.0",
       "files": [
@@ -9573,7 +9870,7 @@
       ]
     },
     "System.IO.FileSystem.Primitives/4.3.0": {
-      "sha512": "6QOb2XFLch7bEc4lIcJH49nJN2HV+OC3fHDgsLVsBVBk3Y4hFAnOBGzJ2lUu7CyDDFo9IBWkSsnbkT6IBwwiMw==",
+      "sha512": "GHMNl5Z4lHB3luDJqVp6NunGThHV4YCZ5LN/S7nlzNOYDRS2qI4+oQPZe1v7WiQlj2GWUJgUnjV/t3Hhwosi2g==",
       "type": "package",
       "path": "system.io.filesystem.primitives/4.3.0",
       "files": [
@@ -9631,7 +9928,7 @@
       ]
     },
     "System.Linq/4.3.0": {
-      "sha512": "5DbqIUpsDp0dFftytzuMmc0oeMdQwjcP/EWxsksIz/w1TcFRkZ3yKKz0PqiYFMmEwPSWw+qNVqD7PJ889JzHbw==",
+      "sha512": "mRQPORPm4rgl7Awt8qm28OXEWS2kFsUnqOWLxglqHCvOrODZpE1dG2ijevKZXW0s08WBsaGSVUEetmtluAOMTQ==",
       "type": "package",
       "path": "system.linq/4.3.0",
       "files": [
@@ -9701,7 +9998,7 @@
       ]
     },
     "System.Linq.Expressions/4.3.0": {
-      "sha512": "PGKkrd2khG4CnlyJwxwwaWWiSiWFNBGlgXvJpeO0xCXrZ89ODrQ6tjEWS/kOqZ8GwEOUATtKtzp1eRgmYNfclg==",
+      "sha512": "oayj8c6FXPYtE9gt65nkyoVWCpgT2bThYzqon4JFHTxolRvrJ6wDs6LlIiBqP5NQbnMnzXIENlIGsmz5LcFs7Q==",
       "type": "package",
       "path": "system.linq.expressions/4.3.0",
       "files": [
@@ -9783,7 +10080,7 @@
       ]
     },
     "System.Linq.Parallel/4.3.0": {
-      "sha512": "td7x21K8LalpjTWCzW/nQboQIFbq9i0r+PCyBBCdLWWnm4NBcdN18vpz/G9hCpUaCIfRL+ZxJNVTywlNlB1aLQ==",
+      "sha512": "Qwfy6Nuc6pqA45T4r5WoT4WARSVHwCs0L2defdrSr98MK3IySRJV0WzOakNTFVa6q1++fLX1TnrZatAPedgFEQ==",
       "type": "package",
       "path": "system.linq.parallel/4.3.0",
       "files": [
@@ -9838,7 +10135,7 @@
       ]
     },
     "System.Linq.Queryable/4.0.1": {
-      "sha512": "Yn/WfYe9RoRfmSLvUt2JerP0BTGGykCZkQPgojaxgzF2N0oPo+/AhB8TXOpdCcNlrG3VRtsamtK2uzsp3cqRVw==",
+      "sha512": "LsPRarFJ3JOsx/MiyUzlxUZJT/SepRE6tPss0kKDtPZSP/lhpq0Ad70JBs2pRWEzBlUTI101gCZIOT649Gj/hg==",
       "type": "package",
       "path": "system.linq.queryable/4.0.1",
       "files": [
@@ -9918,11 +10215,12 @@
         "version.txt"
       ]
     },
-    "System.Net.Http/4.3.0": {
-      "sha512": "sYg+FtILtRQuYWSIAuNOELwVuVsxVyJGWQyOnlAzhV4xvhyFnON1bAzYYC+jjRW8JREM45R0R5Dgi8MTC5sEwA==",
+    "System.Net.Http/4.3.3": {
+      "sha512": "K8Bf1xc41hhxmOp1X3W/y1eRyCwTD5JdEua97gn+7FXCwUeWKK9joR/bTbud07Via/S4W4oYewyzmFeIbt5w4A==",
       "type": "package",
-      "path": "system.net.http/4.3.0",
+      "path": "system.net.http/4.3.3",
       "files": [
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/Xamarinmac20/_._",
@@ -9941,49 +10239,9 @@
         "ref/monotouch10/_._",
         "ref/net45/_._",
         "ref/net46/System.Net.Http.dll",
-        "ref/net46/System.Net.Http.xml",
-        "ref/net46/de/System.Net.Http.xml",
-        "ref/net46/es/System.Net.Http.xml",
-        "ref/net46/fr/System.Net.Http.xml",
-        "ref/net46/it/System.Net.Http.xml",
-        "ref/net46/ja/System.Net.Http.xml",
-        "ref/net46/ko/System.Net.Http.xml",
-        "ref/net46/ru/System.Net.Http.xml",
-        "ref/net46/zh-hans/System.Net.Http.xml",
-        "ref/net46/zh-hant/System.Net.Http.xml",
         "ref/netcore50/System.Net.Http.dll",
-        "ref/netcore50/System.Net.Http.xml",
-        "ref/netcore50/de/System.Net.Http.xml",
-        "ref/netcore50/es/System.Net.Http.xml",
-        "ref/netcore50/fr/System.Net.Http.xml",
-        "ref/netcore50/it/System.Net.Http.xml",
-        "ref/netcore50/ja/System.Net.Http.xml",
-        "ref/netcore50/ko/System.Net.Http.xml",
-        "ref/netcore50/ru/System.Net.Http.xml",
-        "ref/netcore50/zh-hans/System.Net.Http.xml",
-        "ref/netcore50/zh-hant/System.Net.Http.xml",
         "ref/netstandard1.1/System.Net.Http.dll",
-        "ref/netstandard1.1/System.Net.Http.xml",
-        "ref/netstandard1.1/de/System.Net.Http.xml",
-        "ref/netstandard1.1/es/System.Net.Http.xml",
-        "ref/netstandard1.1/fr/System.Net.Http.xml",
-        "ref/netstandard1.1/it/System.Net.Http.xml",
-        "ref/netstandard1.1/ja/System.Net.Http.xml",
-        "ref/netstandard1.1/ko/System.Net.Http.xml",
-        "ref/netstandard1.1/ru/System.Net.Http.xml",
-        "ref/netstandard1.1/zh-hans/System.Net.Http.xml",
-        "ref/netstandard1.1/zh-hant/System.Net.Http.xml",
         "ref/netstandard1.3/System.Net.Http.dll",
-        "ref/netstandard1.3/System.Net.Http.xml",
-        "ref/netstandard1.3/de/System.Net.Http.xml",
-        "ref/netstandard1.3/es/System.Net.Http.xml",
-        "ref/netstandard1.3/fr/System.Net.Http.xml",
-        "ref/netstandard1.3/it/System.Net.Http.xml",
-        "ref/netstandard1.3/ja/System.Net.Http.xml",
-        "ref/netstandard1.3/ko/System.Net.Http.xml",
-        "ref/netstandard1.3/ru/System.Net.Http.xml",
-        "ref/netstandard1.3/zh-hans/System.Net.Http.xml",
-        "ref/netstandard1.3/zh-hant/System.Net.Http.xml",
         "ref/portable-net45+win8+wpa81/_._",
         "ref/win8/_._",
         "ref/wpa81/_._",
@@ -9994,12 +10252,12 @@
         "runtimes/win/lib/net46/System.Net.Http.dll",
         "runtimes/win/lib/netcore50/System.Net.Http.dll",
         "runtimes/win/lib/netstandard1.3/System.Net.Http.dll",
-        "system.net.http.4.3.0.nupkg.sha512",
+        "system.net.http.4.3.3.nupkg.sha512",
         "system.net.http.nuspec"
       ]
     },
     "System.Net.Primitives/4.3.0": {
-      "sha512": "qOu+hDwFwoZPbzPvwut2qATe3ygjeQBDQj91xlsaqGFQUI5i4ZnZb8yyQuLGpDGivEPIt8EJkd1BVzVoP31FXA==",
+      "sha512": "qE8kvCT3l09hOKxngCYQN+giLoIh3PCGsG5/UnxcbX+GLvOVG/rmp60RzENaTzj3YrWI/ThNmz2Ft71qDs1jdw==",
       "type": "package",
       "path": "system.net.primitives/4.3.0",
       "files": [
@@ -10139,7 +10397,7 @@
       ]
     },
     "System.ObjectModel/4.3.0": {
-      "sha512": "bdX+80eKv9bN6K4N+d77OankKHGn6CH711a6fcOpMQu2Fckp/Ft4L/kW9WznHpyR0NRAvJutzOMHNNlBGvxQzQ==",
+      "sha512": "PPmtZ4M8Gec0DmyJQ/EYFgDW51UknTBL8XC1CJx9Xpdvlccv149f9DrqvAGjWLCDGIEkaFWscrUkK0BWgab5ug==",
       "type": "package",
       "path": "system.objectmodel/4.3.0",
       "files": [
@@ -10221,7 +10479,7 @@
       ]
     },
     "System.Reflection/4.3.0": {
-      "sha512": "KMiAFoW7MfJGa9nDFNcfu+FpEdiHpWgTcS2HdMpDvt9saK3y/G4GwprPyzqjFH9NTaGPQeWNHU+iDlDILj96aQ==",
+      "sha512": "wWfu0hpVTKPCcchngBW1LHaWjrDOedp5h2fneEpIO9ZQOLzNLpad0ENLKq+BYjclbtW9XPOa5OVn4m7eN/KHqw==",
       "type": "package",
       "path": "system.reflection/4.3.0",
       "files": [
@@ -10300,7 +10558,7 @@
       ]
     },
     "System.Reflection.Emit/4.3.0": {
-      "sha512": "228FG0jLcIwTVJyz8CLFKueVqQK36ANazUManGaJHkO0icjiIypKW7YLWLIWahyIkdh5M7mV2dJepllLyA1SKg==",
+      "sha512": "a5xx4dz6t0kuxWSSZ/UuyZGxyW5lE+PLJTMwOvIJuuHOx5fozr4QO+hVEaYdzDKCweIEPAv18GYMtKNcS19gbA==",
       "type": "package",
       "path": "system.reflection.emit/4.3.0",
       "files": [
@@ -10334,7 +10592,7 @@
       ]
     },
     "System.Reflection.Emit.ILGeneration/4.3.0": {
-      "sha512": "59tBslAk9733NXLrUJrwNZEzbMAcu8k344OYo+wfSVygcgZ9lgBdGIzH/nrg3LYhXceynyvTc8t5/GD4Ri0/ng==",
+      "sha512": "iNsbYYzdGbIPVUVp5X2Tl1fzg63G7b1i1whQ8O1/SKxxHfD5/K7DhFS1J4MjSm1WiJEyO8FTWpsuPuvKfe8gqg==",
       "type": "package",
       "path": "system.reflection.emit.ilgeneration/4.3.0",
       "files": [
@@ -10377,7 +10635,7 @@
       ]
     },
     "System.Reflection.Emit.Lightweight/4.3.0": {
-      "sha512": "oadVHGSMsTmZsAF864QYN1t1QzZjIcuKU3l2S9cZOwDdDueNTrqq1yRj7koFfIGEnKpt6NjpL3rOzRhs4ryOgA==",
+      "sha512": "xmZTKEkWpkN4JC5fA5TzkINM9oZeMUEgT/3I7zuc4GbhshpZ1uLFg1pEbAp4JOAALyrvzj1xY6uOgPDCRcd7Jg==",
       "type": "package",
       "path": "system.reflection.emit.lightweight/4.3.0",
       "files": [
@@ -10420,7 +10678,7 @@
       ]
     },
     "System.Reflection.Extensions/4.3.0": {
-      "sha512": "rJkrJD3kBI5B712aRu4DpSIiHRtr6QlfZSQsb0hYHrDCZORXCFjQfoipo2LaMUHoT9i1B7j7MnfaEKWDFmFQNQ==",
+      "sha512": "nOHu/YMk2IRvqMPNMhG/Le+rEXjDxFnUYXrLoR2fAWsQMtWXvkSDg+UoYuOZuDK7XI+mrvd0YF0yDoCicI9jtQ==",
       "type": "package",
       "path": "system.reflection.extensions/4.3.0",
       "files": [
@@ -10495,7 +10753,7 @@
       ]
     },
     "System.Reflection.Primitives/4.3.0": {
-      "sha512": "5RXItQz5As4xN2/YUDxdpsEkMhvw3e6aNveFXUn4Hl/udNTCNhnKp8lT9fnc3MhvGKh1baak5CovpuQUXHAlIA==",
+      "sha512": "iC1Ccuhlgc+qtgCul5A1BF6wvvxDhQTCm1hXmCLfs3EC20eqBo5XuXGkCWg9gl6v8H5I5zkx8efgYwoHVW7cow==",
       "type": "package",
       "path": "system.reflection.primitives/4.3.0",
       "files": [
@@ -10550,7 +10808,7 @@
       ]
     },
     "System.Reflection.TypeExtensions/4.3.0": {
-      "sha512": "7u6ulLcZbyxB5Gq0nMkQttcdBTx57ibzw+4IOXEfR+sXYQoHvjW5LTLyNr8O22UIMrqYbchJQJnos4eooYzYJA==",
+      "sha512": "V8gTR9X8lnTrDzB/2EDjZmBE+NLyvGGhvn6tl0++grmGK7/gb5bDnhp7xLYc5X+Hj1r9kKm1cNtbOD8QBPvFjw==",
       "type": "package",
       "path": "system.reflection.typeextensions/4.3.0",
       "files": [
@@ -10602,7 +10860,7 @@
       ]
     },
     "System.Resources.ResourceManager/4.3.0": {
-      "sha512": "/zrcPkkWdZmI4F92gL/TPumP98AVDu/Wxr3CSJGQQ+XN6wbRZcyfSKVoPo17ilb3iOr0cCRqJInGwNMolqhS8A==",
+      "sha512": "x1S/V+vMAlRPsgdxqtV2UmYnUQ4/LH9LjwqMar8qaVarPYWUf1CAbQt6wscAh1M+TwWEwlNXXlOjM2bhJ8RUpg==",
       "type": "package",
       "path": "system.resources.resourcemanager/4.3.0",
       "files": [
@@ -10657,7 +10915,7 @@
       ]
     },
     "System.Runtime/4.3.0": {
-      "sha512": "JufQi0vPQ0xGnAczR13AUFglDyVYt4Kqnz1AZaiKZ5+GICq0/1MH/mO/eAJHt/mHW1zjKBJd7kV26SrxddAhiw==",
+      "sha512": "ry6cNFkc6eRgVVfTM9XPbhSintmvWkPjjG/9NzM9ejtzJLxX4XNnUS5QfR1/HFpwd2+lSonibuG+XCyTXptNgg==",
       "type": "package",
       "path": "system.runtime/4.3.0",
       "files": [
@@ -10771,7 +11029,7 @@
       ]
     },
     "System.Runtime.Extensions/4.3.0": {
-      "sha512": "guW0uK0fn5fcJJ1tJVXYd7/1h5F+pea1r7FLSOz/f8vPEqbR2ZAknuRDvTQ8PzAilDveOxNjSfr0CHfIQfFk8g==",
+      "sha512": "7OcFo1mYT+lQtOWfP7JXggyJ/ZZqBc577cfrAi9bv4bf24SKuMo1I1E4DjjjuuBjoi0IbT7y0YajHU98UhwMQg==",
       "type": "package",
       "path": "system.runtime.extensions/4.3.0",
       "files": [
@@ -10850,7 +11108,7 @@
       ]
     },
     "System.Runtime.Handles/4.3.0": {
-      "sha512": "OKiSUN7DmTWeYb3l51A7EYaeNMnvxwE249YtZz7yooT4gOZhmTjIn48KgSsw2k2lYdLgTKNJw/ZIfSElwDRVgg==",
+      "sha512": "R9ER/nfffUWAmpF61TRSwFnUI+vMn1VoqUdVFnTc/lyrwIL5Ekt1l+7ClrTUkwfy0n0xlCmnI+q5VUUQcf+itg==",
       "type": "package",
       "path": "system.runtime.handles/4.3.0",
       "files": [
@@ -10886,7 +11144,7 @@
       ]
     },
     "System.Runtime.InteropServices/4.3.0": {
-      "sha512": "uv1ynXqiMK8mp1GM3jDqPCFN66eJ5w5XNomaK2XD+TuCroNTLFGeZ+WCmBMcBDyTFKou3P6cR6J/QsaqDp7fGQ==",
+      "sha512": "apt+IGB1lbzX8xIeCoJ1i28AORSY1oeQ2DVd3agna6QwHCvl+TUZ4CJZ5l1D1L7PXQCQMcg8iViiC+nOIJEs1g==",
       "type": "package",
       "path": "system.runtime.interopservices/4.3.0",
       "files": [
@@ -10977,7 +11235,7 @@
       ]
     },
     "System.Runtime.InteropServices.RuntimeInformation/4.3.0": {
-      "sha512": "cbz4YJMqRDR7oLeMRbdYv7mYzc++17lNhScCX0goO2XpGWdvAt60CGN+FHdePUEHCe/Jy9jUlvNAiNdM+7jsOw==",
+      "sha512": "JjhLrM7u/CEdMZEvwDVNZqTMQp87CqPYIg44wDHrW4UZfccgXidwjuTS45vLsog0oOCHZ0R/S038nqOzOV/aiQ==",
       "type": "package",
       "path": "system.runtime.interopservices.runtimeinformation/4.3.0",
       "files": [
@@ -11010,7 +11268,7 @@
       ]
     },
     "System.Runtime.Numerics/4.3.0": {
-      "sha512": "yMH+MfdzHjy17l2KESnPiF2dwq7T+xLnSJar7slyimAkUh/gTrS9/UQOtv7xarskJ2/XDSNvfLGOBQPjL7PaHQ==",
+      "sha512": "ZXdJaUYoRQr15jxVPOZ901zHUCWhrd47xDdpCOGcl9LixvJizDm5p+s5w1zSS/63MQrfNuWJqzJCL7Hp5hJj4w==",
       "type": "package",
       "path": "system.runtime.numerics/4.3.0",
       "files": [
@@ -11065,7 +11323,7 @@
       ]
     },
     "System.Runtime.Serialization.Primitives/4.3.0": {
-      "sha512": "Wz+0KOukJGAlXjtKr+5Xpuxf8+c8739RI1C+A2BoQZT+wMCCoMDDdO8/4IRHfaVINqL78GO8dW8G2lW/e45Mcw==",
+      "sha512": "6KOjHsSOi9gr4jL+Tbmepjz7h/7jBb3k+FaNXd6SqJar/nuDCScQTFP/NvcTPJQ9LPjNfNvZjJylxmIu68fZDg==",
       "type": "package",
       "path": "system.runtime.serialization.primitives/4.3.0",
       "files": [
@@ -11247,7 +11505,7 @@
       ]
     },
     "System.Security.Claims/4.3.0": {
-      "sha512": "P/+BR/2lnc4PNDHt/TPBAWHVMLMRHsyYZbU1NphW4HIWzCggz8mJbTQQ3MKljFE7LS3WagmVFuBgoLcFzYXlkA==",
+      "sha512": "TYhtktU8DNMGg/0bB1Vu+oIbjc4bvC1P+5aXk370/xvUO6+4RdMFSyELgR0F4RbXHLKQtQ6Uv+lWxNeIAwUvrg==",
       "type": "package",
       "path": "system.security.claims/4.3.0",
       "files": [
@@ -11284,7 +11542,7 @@
       ]
     },
     "System.Security.Cryptography.Algorithms/4.3.0": {
-      "sha512": "W1kd2Y8mYSCgc3ULTAZ0hOP2dSdG5YauTb1089T0/kRcN2MpSAW1izOFROrJgxSlMn3ArsgHXagigyi+ibhevg==",
+      "sha512": "XkoXkm401/CJRl9PAPf0W+kIj66q13jdR8Qn5Gueci0Sup+6/hQ2CG7fc3tRFW1BdbIvwwEXisEMiJDsDv7Ywg==",
       "type": "package",
       "path": "system.security.cryptography.algorithms/4.3.0",
       "files": [
@@ -11385,7 +11643,7 @@
       ]
     },
     "System.Security.Cryptography.Csp/4.3.0": {
-      "sha512": "X4s/FCkEUnRGnwR3aSfVIkldBmtURMhmexALNTwpjklzxWU7yjMk7GHLKOZTNkgnWnE0q7+BCf9N2LVRWxewaA==",
+      "sha512": "PpqmfKcZn57Q7OMjR3yT4OLMf+lsVVRo89qpT2Fi0xgrPeSfwMt12t1lvxefsyrCVCn0RSC6KKpdien2sqNokw==",
       "type": "package",
       "path": "system.security.cryptography.csp/4.3.0",
       "files": [
@@ -11415,7 +11673,7 @@
       ]
     },
     "System.Security.Cryptography.Encoding/4.3.0": {
-      "sha512": "1DEWjZZly9ae9C79vFwqaO5kaOlI5q+3/55ohmq/7dpDyDfc8lYe7YVxJUZ5MF/NtbkRjwFRo14yM4OEo9EmDw==",
+      "sha512": "b6oV+2WYAyQ79gDbPBLaZWR+4l6ZrGi0aS1ASVHwkkqMQp/0K+qA0TNubBCh3igL7XpvD9ZbCCRfhtNrGCez0g==",
       "type": "package",
       "path": "system.security.cryptography.encoding/4.3.0",
       "files": [
@@ -11454,7 +11712,7 @@
       ]
     },
     "System.Security.Cryptography.OpenSsl/4.3.0": {
-      "sha512": "h4CEgOgv5PKVF/HwaHzJRiVboL2THYCou97zpmhjghx5frc7fIvlkY1jL+lnIQyChrJDMNEXS6r7byGif8Cy4w==",
+      "sha512": "KkABI1roTv/PON3lAo+8OR/X8DUw7pxfMzSpexxBV3BJ/DIW1LgJJXeepdvS3ae+HLGh3d4KReB1Q90W0h28kQ==",
       "type": "package",
       "path": "system.security.cryptography.openssl/4.3.0",
       "files": [
@@ -11500,7 +11758,7 @@
       ]
     },
     "System.Security.Cryptography.Primitives/4.3.0": {
-      "sha512": "7bDIyVFNL/xKeFHjhobUAQqSpJq9YTOpbEs6mR233Et01STBMXNAc/V+BM6dwYGc95gVh/Zf+iVXWzj3mE8DWg==",
+      "sha512": "q8D4T9aIWO0XO+0s03P1ea+aZfaeq9Ccv+G7CnY4WP2DL243MOdNVshtDhQBg44ZREb7OyweJoO4aD8FRPHzow==",
       "type": "package",
       "path": "system.security.cryptography.primitives/4.3.0",
       "files": [
@@ -11527,7 +11785,7 @@
       ]
     },
     "System.Security.Cryptography.X509Certificates/4.3.0": {
-      "sha512": "t2Tmu6Y2NtJ2um0RtcuhP7ZdNNxXEgUm2JeoA/0NvlMjAhKCnM1NX07TDl3244mVp3QU6LPEhT3HTtH1uF7IYw==",
+      "sha512": "SCsSqILZXsNWEAFJ2rtBuBXF5dVJx6iRlzHS1Uf6nmKecyDEVyAi0turHOl3pOSPNIg2ZUXbuJSkyzIIGGDNhg==",
       "type": "package",
       "path": "system.security.cryptography.x509certificates/4.3.0",
       "files": [
@@ -11621,7 +11879,7 @@
       ]
     },
     "System.Security.Principal/4.3.0": {
-      "sha512": "I1tkfQlAoMM2URscUtpcRo/hX0jinXx6a/KUtEQoz3owaYwl3qwsO8cbzYVVnjxrzxjHo3nJC+62uolgeGIS9A==",
+      "sha512": "Zg2pY1e9KXC70Yd4I7g6bF/79CaZ5LSSQsr1rAXwIxRMaIYcmxaY31iWBNLRlPTKedql6uws5RLg6pVCEJAKgg==",
       "type": "package",
       "path": "system.security.principal/4.3.0",
       "files": [
@@ -11720,7 +11978,7 @@
       ]
     },
     "System.Text.Encoding/4.3.0": {
-      "sha512": "BiIg+KWaSDOITze6jGQynxg64naAPtqGHBwDrLaCtixsa5bKiR8dpPOHA7ge3C0JJQizJE+sfkz1wV+BAKAYZw==",
+      "sha512": "F+R6RF07/v11VhnwaDAkT1pNh7AUW7teJbBtkQcV7ip/ZZFR1iWreZvpK/XK+4xe2NonlLv0GuDs6BZVDidhAg==",
       "type": "package",
       "path": "system.text.encoding/4.3.0",
       "files": [
@@ -11833,7 +12091,7 @@
       ]
     },
     "System.Text.Encoding.Extensions/4.3.0": {
-      "sha512": "YVMK0Bt/A43RmwizJoZ22ei2nmrhobgeiYwFzC4YAN+nue8RF6djXDMog0UCn+brerQoYVyaS+ghy9P/MUVcmw==",
+      "sha512": "yj4iLfDxB8olOGR1T8xon0flTtIm1MUJdsRcwofUMiW8n3XVImlb/8STtSNycjLlm+Cw55rwC6jRUSk9v8K22w==",
       "type": "package",
       "path": "system.text.encoding.extensions/4.3.0",
       "files": [
@@ -11917,7 +12175,7 @@
       ]
     },
     "System.Text.RegularExpressions/4.3.0": {
-      "sha512": "RpT2DA+L660cBt1FssIE9CAGpLFdFPuheB7pLpKpn6ZXNby7jDERe8Ua/Ne2xGiwLVG2JOqziiaVCGDon5sKFA==",
+      "sha512": "kOLaoOtYyyZd5yWeNCN0xLtW3vFoTB1R/njtAcA907w9yMZ3TF/8GzqDKS7FPjUMQQf1n+bohs0d0+Xc5Pe5iQ==",
       "type": "package",
       "path": "system.text.regularexpressions/4.3.0",
       "files": [
@@ -11999,7 +12257,7 @@
       ]
     },
     "System.Threading/4.3.0": {
-      "sha512": "VkUS0kOBcUf3Wwm0TSbrevDDZ6BlM+b/HRiapRFWjM5O0NS0LviG0glKmFK+hhPDd1XFeSdU1GmlLhb2CoVpIw==",
+      "sha512": "4yghDfJc5VDtS3iB3Yg1XpasWxo7bXWmx+uYVwORKIdnp3falvIbrcLi+IJ3K5g8TBZZlI+nbHnRBB0BYiKxyA==",
       "type": "package",
       "path": "system.threading/4.3.0",
       "files": [
@@ -12088,7 +12346,7 @@
       ]
     },
     "System.Threading.Tasks/4.3.0": {
-      "sha512": "LbSxKEdOUhVe8BezB/9uOGGppt+nZf6e1VFyw6v3DN6lqitm0OSn2uXMOdtP0M3W4iMcqcivm2J6UgqiwwnXiA==",
+      "sha512": "Oz3K4x/Hk2E4te3ixXmd7rCDkSwZFv89MaYZQ6EqhIni5vCF6FePYDKghmWHdEj7+AdKi6k2+IL2DdI0zaHxGg==",
       "type": "package",
       "path": "system.threading.tasks/4.3.0",
       "files": [
@@ -12192,7 +12450,7 @@
       ]
     },
     "System.Threading.Tasks.Parallel/4.3.0": {
-      "sha512": "cbjBNZHf/vQCfcdhzx7knsiygoCKgxL8mZOeocXZn5gWhCdzHIq6bYNKWX0LAJCWYP7bds4yBK8p06YkP0oa0g==",
+      "sha512": "fpKrMZdilJtTtFmqsBO3Ilfi6uCPvluB74tx4SsA6AVSup314clpLRU+8Eo6ZbqX6FnP2Nn5kjIMMZJPqjJsRA==",
       "type": "package",
       "path": "system.threading.tasks.parallel/4.3.0",
       "files": [
@@ -12247,7 +12505,7 @@
       ]
     },
     "System.Threading.Thread/4.3.0": {
-      "sha512": "OHmbT+Zz065NKII/ZHcH9XO1dEuLGI1L2k7uYss+9C1jLxTC9kTZZuzUOyXHayRk+dft9CiDf3I/QZ0t8JKyBQ==",
+      "sha512": "f/t0fVwzctN0g92Sx9spZtL5CKyN1LvNrnZrl/OzAO3JrYzRdWrY9JKk6NO1F6H0xcq/l4d5esA3ce4ZH+KYKg==",
       "type": "package",
       "path": "system.threading.thread/4.3.0",
       "files": [
@@ -12284,51 +12542,23 @@
         "system.threading.thread.nuspec"
       ]
     },
-    "System.ValueTuple/4.5.0": {
-      "sha512": "xZtSZNEHGa+tGsKuP4sh257vxJ/yemShz4EusmomkynMzuEDDjVaErBNewpzEF6swUgbcrSQAX3ELsEp1zCOwA==",
+    "System.ValueTuple/4.3.0": {
+      "sha512": "cNLEvBX3d6MMQRZe3SMFNukVbitDAEpVZO17qa0/2FHxZ7Y7PpFRpr6m2615XYM/tYYYf0B+WyHNujqIw8Luwg==",
       "type": "package",
-      "path": "system.valuetuple/4.5.0",
+      "path": "system.valuetuple/4.3.0",
       "files": [
-        ".signature.p7s",
-        "LICENSE.TXT",
-        "THIRD-PARTY-NOTICES.TXT",
-        "lib/MonoAndroid10/_._",
-        "lib/MonoTouch10/_._",
-        "lib/net461/System.ValueTuple.dll",
-        "lib/net461/System.ValueTuple.xml",
-        "lib/net47/System.ValueTuple.dll",
-        "lib/net47/System.ValueTuple.xml",
-        "lib/netcoreapp2.0/_._",
+        "ThirdPartyNotices.txt",
+        "dotnet_library_license.txt",
+        "lib/netstandard1.0/.xml",
         "lib/netstandard1.0/System.ValueTuple.dll",
-        "lib/netstandard1.0/System.ValueTuple.xml",
-        "lib/netstandard2.0/_._",
+        "lib/portable-net40+sl4+win8+wp8/.xml",
         "lib/portable-net40+sl4+win8+wp8/System.ValueTuple.dll",
-        "lib/portable-net40+sl4+win8+wp8/System.ValueTuple.xml",
-        "lib/uap10.0.16299/_._",
-        "lib/xamarinios10/_._",
-        "lib/xamarinmac20/_._",
-        "lib/xamarintvos10/_._",
-        "lib/xamarinwatchos10/_._",
-        "ref/MonoAndroid10/_._",
-        "ref/MonoTouch10/_._",
-        "ref/net461/System.ValueTuple.dll",
-        "ref/net47/System.ValueTuple.dll",
-        "ref/netcoreapp2.0/_._",
-        "ref/netstandard2.0/_._",
-        "ref/portable-net40+sl4+win8+wp8/System.ValueTuple.dll",
-        "ref/uap10.0.16299/_._",
-        "ref/xamarinios10/_._",
-        "ref/xamarinmac20/_._",
-        "ref/xamarintvos10/_._",
-        "ref/xamarinwatchos10/_._",
-        "system.valuetuple.4.5.0.nupkg.sha512",
-        "system.valuetuple.nuspec",
-        "useSharedDesignerContext.txt",
-        "version.txt"
+        "system.valuetuple.4.3.0.nupkg.sha512",
+        "system.valuetuple.nuspec"
       ]
     },
     "System.Xml.ReaderWriter/4.3.0": {
-      "sha512": "GrprA+Z0RUXaR4N7/eW71j1rgMnEnEVlgii49GZyAjTH7uliMnrOU3HNFBr6fEDBCJCIdlVNq9hHbaDR621XBA==",
+      "sha512": "oZ7ceuFQ5J06NSDaxt763Y+B/XYpX1IW80XzbTZGXv83naQtxZMgzYrhq5ltKPrlCJS+bogW2k+YCFI/MNVb7A==",
       "type": "package",
       "path": "system.xml.readerwriter/4.3.0",
       "files": [
@@ -12398,7 +12628,7 @@
       ]
     },
     "System.Xml.XDocument/4.3.0": {
-      "sha512": "5zJ0XDxAIg8iy+t4aMnQAu0MqVbqyvfoUVl1yDV61xdo3Vth45oA2FoY4pPkxYAH5f8ixpmTqXeEIya95x0aCQ==",
+      "sha512": "QLjTh08ciFq2flE6AMj196WjlgyFIHzH40aLxVaCBMYoxe4kjNrXvU2lozfvoYYm/EB7bRhNM0AEiuv+wDxMQQ==",
       "type": "package",
       "path": "system.xml.xdocument/4.3.0",
       "files": [
@@ -12670,16 +12900,20 @@
     ".NETCoreApp,Version=v2.1": [
       "AdminSystem.Models >= 1.0.0",
       "AdminSystem.Repositories >= 1.0.0",
-      "AutoMapper >= 7.0.1",
-      "AutoMapper.Extensions.Microsoft.DependencyInjection >= 5.0.1",
+      "AutoMapper >= 8.0.0",
+      "AutoMapper.Extensions.Microsoft.DependencyInjection >= 6.0.0",
       "Autofac >= 4.8.1",
       "Autofac.Extensions.DependencyInjection >= 4.3.1",
       "Microsoft.AspNetCore.App >= 2.1.1",
+      "Microsoft.AspNetCore.Authentication.JwtBearer >= 2.1.2",
       "Microsoft.AspNetCore.Razor.Design >= 2.1.2",
       "Microsoft.NETCore.App >= 2.1.0",
-      "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 2.1.1",
+      "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 2.1.6",
       "NLog.Extensions.Logging >= 1.3.0",
-      "NLog.Web.AspNetCore >= 4.7.0"
+      "NLog.Web.AspNetCore >= 4.7.0",
+      "Pivotal.Discovery.ClientCore >= 2.1.1",
+      "Steeltoe.Extensions.Configuration.ConfigServer >= 1.1.1",
+      "System.IdentityModel.Tokens.Jwt >= 5.3.0"
     ]
   },
   "packageFolders": {
@@ -12732,11 +12966,11 @@
         "dependencies": {
           "AutoMapper": {
             "target": "Package",
-            "version": "[7.0.1, )"
+            "version": "[8.0.0, )"
           },
           "AutoMapper.Extensions.Microsoft.DependencyInjection": {
             "target": "Package",
-            "version": "[5.0.1, )"
+            "version": "[6.0.0, )"
           },
           "Autofac": {
             "target": "Package",
@@ -12752,6 +12986,10 @@
             "version": "[2.1.1, )",
             "autoReferenced": true
           },
+          "Microsoft.AspNetCore.Authentication.JwtBearer": {
+            "target": "Package",
+            "version": "[2.1.2, )"
+          },
           "Microsoft.AspNetCore.Razor.Design": {
             "suppressParent": "All",
             "target": "Package",
@@ -12764,7 +13002,7 @@
           },
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
             "target": "Package",
-            "version": "[2.1.1, )"
+            "version": "[2.1.6, )"
           },
           "NLog.Extensions.Logging": {
             "target": "Package",
@@ -12773,6 +13011,18 @@
           "NLog.Web.AspNetCore": {
             "target": "Package",
             "version": "[4.7.0, )"
+          },
+          "Pivotal.Discovery.ClientCore": {
+            "target": "Package",
+            "version": "[2.1.1, )"
+          },
+          "Steeltoe.Extensions.Configuration.ConfigServer": {
+            "target": "Package",
+            "version": "[1.1.1, )"
+          },
+          "System.IdentityModel.Tokens.Jwt": {
+            "target": "Package",
+            "version": "[5.3.0, )"
           }
         },
         "imports": [

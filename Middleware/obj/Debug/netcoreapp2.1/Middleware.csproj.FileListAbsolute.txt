@@ -1,0 +1,17 @@
+F:\StudyFile\AdminSystem\AdminSystem\Middleware\bin\Debug\netcoreapp2.1\Middleware.deps.json
+F:\StudyFile\AdminSystem\AdminSystem\Middleware\bin\Debug\netcoreapp2.1\Middleware.dll
+F:\StudyFile\AdminSystem\AdminSystem\Middleware\bin\Debug\netcoreapp2.1\AdminSystem.Common.dll
+F:\StudyFile\AdminSystem\AdminSystem\Middleware\bin\Debug\netcoreapp2.1\Microsoft.AspNetCore.Http.Abstractions.dll
+F:\StudyFile\AdminSystem\AdminSystem\Middleware\bin\Debug\netcoreapp2.1\System.IdentityModel.Tokens.Jwt.dll
+F:\StudyFile\AdminSystem\AdminSystem\Middleware\bin\Debug\netcoreapp2.1\Newtonsoft.Json.dll
+F:\StudyFile\AdminSystem\AdminSystem\Middleware\bin\Debug\netcoreapp2.1\Microsoft.IdentityModel.Tokens.dll
+F:\StudyFile\AdminSystem\AdminSystem\Middleware\bin\Debug\netcoreapp2.1\AdminSystem.Common.pdb
+F:\StudyFile\AdminSystem\AdminSystem\Middleware\bin\Debug\netcoreapp2.1\Microsoft.AspNetCore.Http.Abstractions.xml
+F:\StudyFile\AdminSystem\AdminSystem\Middleware\bin\Debug\netcoreapp2.1\System.IdentityModel.Tokens.Jwt.xml
+F:\StudyFile\AdminSystem\AdminSystem\Middleware\bin\Debug\netcoreapp2.1\Newtonsoft.Json.xml
+F:\StudyFile\AdminSystem\AdminSystem\Middleware\bin\Debug\netcoreapp2.1\Microsoft.IdentityModel.Tokens.xml
+F:\StudyFile\AdminSystem\AdminSystem\Middleware\obj\Debug\netcoreapp2.1\Middleware.csprojAssemblyReference.cache
+F:\StudyFile\AdminSystem\AdminSystem\Middleware\obj\Debug\netcoreapp2.1\Middleware.csproj.CoreCompileInputs.cache
+F:\StudyFile\AdminSystem\AdminSystem\Middleware\obj\Debug\netcoreapp2.1\Middleware.AssemblyInfoInputs.cache
+F:\StudyFile\AdminSystem\AdminSystem\Middleware\obj\Debug\netcoreapp2.1\Middleware.AssemblyInfo.cs
+F:\StudyFile\AdminSystem\AdminSystem\Middleware\obj\Debug\netcoreapp2.1\Middleware.csproj.CopyComplete

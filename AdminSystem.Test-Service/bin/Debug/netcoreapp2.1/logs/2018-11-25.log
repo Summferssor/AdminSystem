@@ -1,0 +1,50 @@
+2018-11-25 21:11:29.6256 [ERROR] System.Threading.ExecutionContext.RunInternal DoGetApplicationsAsync Exception: System.OperationCanceledException: The operation was canceled.
+   at System.Net.Http.HttpClient.HandleFinishSendAsyncError(Exception e, CancellationTokenSource cts)
+   at System.Net.Http.HttpClient.FinishSendAsyncBuffered(Task`1 sendTask, HttpRequestMessage request, CancellationTokenSource cts, Boolean disposeCts)
+   at Steeltoe.Discovery.Eureka.Transport.EurekaHttpClient.DoGetApplicationsAsync(String path, ISet`1 regions)  @Steeltoe.Discovery.Eureka.Transport.EurekaHttpClient+<DoGetApplicationsAsync>d__22.MoveNext
+2018-11-25 21:11:29.5967 [ERROR] System.Threading.ExecutionContext.RunInternal SendHeartbeatAsync Exception: System.OperationCanceledException: The operation was canceled.
+   at System.Net.Http.HttpClient.HandleFinishSendAsyncError(Exception e, CancellationTokenSource cts)
+   at System.Net.Http.HttpClient.FinishSendAsyncBuffered(Task`1 sendTask, HttpRequestMessage request, CancellationTokenSource cts, Boolean disposeCts)
+   at Steeltoe.Discovery.Eureka.Transport.EurekaHttpClient.SendHeartBeatAsync(String appName, String id, InstanceInfo info, InstanceStatus overriddenStatus)  @Steeltoe.Discovery.Eureka.Transport.EurekaHttpClient+<SendHeartBeatAsync>d__10.MoveNext
+2018-11-25 21:11:29.7735 [ERROR] System.Threading.ExecutionContext.RunInternal Renew failed, Exception: System.OperationCanceledException: The operation was canceled.
+   at System.Net.Http.HttpClient.HandleFinishSendAsyncError(Exception e, CancellationTokenSource cts)
+   at System.Net.Http.HttpClient.FinishSendAsyncBuffered(Task`1 sendTask, HttpRequestMessage request, CancellationTokenSource cts, Boolean disposeCts)
+   at Steeltoe.Discovery.Eureka.Transport.EurekaHttpClient.SendHeartBeatAsync(String appName, String id, InstanceInfo info, InstanceStatus overriddenStatus)
+   at Steeltoe.Discovery.Eureka.DiscoveryClient.RenewAsync()  @Steeltoe.Discovery.Eureka.DiscoveryClient+<RenewAsync>d__59.MoveNext
+2018-11-25 21:11:29.7735 [ERROR] System.Threading.ExecutionContext.RunInternal FetchRegistry failed, Exception: System.OperationCanceledException: The operation was canceled.
+   at System.Net.Http.HttpClient.HandleFinishSendAsyncError(Exception e, CancellationTokenSource cts)
+   at System.Net.Http.HttpClient.FinishSendAsyncBuffered(Task`1 sendTask, HttpRequestMessage request, CancellationTokenSource cts, Boolean disposeCts)
+   at Steeltoe.Discovery.Eureka.Transport.EurekaHttpClient.DoGetApplicationsAsync(String path, ISet`1 regions)
+   at Steeltoe.Discovery.Eureka.Transport.EurekaHttpClient.GetDeltaAsync(ISet`1 regions)
+   at Steeltoe.Discovery.Eureka.DiscoveryClient.FetchRegistryDeltaAsync()
+   at Steeltoe.Discovery.Eureka.DiscoveryClient.FetchRegistryAsync(Boolean fullUpdate)  @Steeltoe.Discovery.Eureka.DiscoveryClient+<FetchRegistryAsync>d__56.MoveNext
+2018-11-25 21:11:29.7924 [ERROR] System.Threading.ExecutionContext.RunInternal HeartBeat failed  @Steeltoe.Discovery.Eureka.DiscoveryClient+<HeartBeatTaskAsync>d__65.MoveNext
+2018-11-25 21:11:29.7997 [ERROR] System.Threading.ExecutionContext.RunInternal CacheRefresh failed  @Steeltoe.Discovery.Eureka.DiscoveryClient+<CacheRefreshTaskAsync>d__66.MoveNext
+2018-11-25 22:24:57.8019 [ERROR] System.Threading.ExecutionContext.RunInternal SendHeartbeatAsync Exception: System.OperationCanceledException: The operation was canceled.
+   at System.Net.Http.HttpClient.HandleFinishSendAsyncError(Exception e, CancellationTokenSource cts)
+   at System.Net.Http.HttpClient.FinishSendAsyncBuffered(Task`1 sendTask, HttpRequestMessage request, CancellationTokenSource cts, Boolean disposeCts)
+   at Steeltoe.Discovery.Eureka.Transport.EurekaHttpClient.SendHeartBeatAsync(String appName, String id, InstanceInfo info, InstanceStatus overriddenStatus)  @Steeltoe.Discovery.Eureka.Transport.EurekaHttpClient+<SendHeartBeatAsync>d__10.MoveNext
+2018-11-25 22:24:57.8894 [ERROR] System.Threading.ExecutionContext.RunInternal Renew failed, Exception: System.OperationCanceledException: The operation was canceled.
+   at System.Net.Http.HttpClient.HandleFinishSendAsyncError(Exception e, CancellationTokenSource cts)
+   at System.Net.Http.HttpClient.FinishSendAsyncBuffered(Task`1 sendTask, HttpRequestMessage request, CancellationTokenSource cts, Boolean disposeCts)
+   at Steeltoe.Discovery.Eureka.Transport.EurekaHttpClient.SendHeartBeatAsync(String appName, String id, InstanceInfo info, InstanceStatus overriddenStatus)
+   at Steeltoe.Discovery.Eureka.DiscoveryClient.RenewAsync()  @Steeltoe.Discovery.Eureka.DiscoveryClient+<RenewAsync>d__59.MoveNext
+2018-11-25 22:24:57.9053 [ERROR] System.Threading.ExecutionContext.RunInternal HeartBeat failed  @Steeltoe.Discovery.Eureka.DiscoveryClient+<HeartBeatTaskAsync>d__65.MoveNext
+2018-11-25 22:24:57.9463 [ERROR] System.Threading.ExecutionContext.RunInternal DoGetApplicationsAsync Exception: System.OperationCanceledException: The operation was canceled.
+   at System.Net.Http.HttpClient.HandleFinishSendAsyncError(Exception e, CancellationTokenSource cts)
+   at System.Net.Http.HttpClient.FinishSendAsyncBuffered(Task`1 sendTask, HttpRequestMessage request, CancellationTokenSource cts, Boolean disposeCts)
+   at Steeltoe.Discovery.Eureka.Transport.EurekaHttpClient.DoGetApplicationsAsync(String path, ISet`1 regions)  @Steeltoe.Discovery.Eureka.Transport.EurekaHttpClient+<DoGetApplicationsAsync>d__22.MoveNext
+2018-11-25 22:24:57.9601 [ERROR] System.Threading.ExecutionContext.RunInternal FetchRegistry failed, Exception: System.OperationCanceledException: The operation was canceled.
+   at System.Net.Http.HttpClient.HandleFinishSendAsyncError(Exception e, CancellationTokenSource cts)
+   at System.Net.Http.HttpClient.FinishSendAsyncBuffered(Task`1 sendTask, HttpRequestMessage request, CancellationTokenSource cts, Boolean disposeCts)
+   at Steeltoe.Discovery.Eureka.Transport.EurekaHttpClient.DoGetApplicationsAsync(String path, ISet`1 regions)
+   at Steeltoe.Discovery.Eureka.Transport.EurekaHttpClient.GetDeltaAsync(ISet`1 regions)
+   at Steeltoe.Discovery.Eureka.DiscoveryClient.FetchRegistryDeltaAsync()
+   at Steeltoe.Discovery.Eureka.DiscoveryClient.FetchRegistryAsync(Boolean fullUpdate)  @Steeltoe.Discovery.Eureka.DiscoveryClient+<FetchRegistryAsync>d__56.MoveNext
+2018-11-25 22:24:57.9782 [ERROR] System.Threading.ExecutionContext.RunInternal CacheRefresh failed  @Steeltoe.Discovery.Eureka.DiscoveryClient+<CacheRefreshTaskAsync>d__66.MoveNext
+2018-11-25 22:29:34.8878 [ERROR] System.Threading.ExecutionContext.RunInternal RegisterAsync Exception:  @Steeltoe.Discovery.Eureka.Transport.EurekaHttpClient+<RegisterAsync>d__9.MoveNext
+2018-11-25 22:29:35.0162 [ERROR] System.Threading.ExecutionContext.RunInternal Register failed, Exception: System.OperationCanceledException: The operation was canceled.
+   at System.Net.Http.HttpClient.HandleFinishSendAsyncError(Exception e, CancellationTokenSource cts)
+   at System.Net.Http.HttpClient.FinishSendAsyncBuffered(Task`1 sendTask, HttpRequestMessage request, CancellationTokenSource cts, Boolean disposeCts)
+   at Steeltoe.Discovery.Eureka.Transport.EurekaHttpClient.RegisterAsync(InstanceInfo info)
+   at Steeltoe.Discovery.Eureka.DiscoveryClient.RegisterAsync()  @Steeltoe.Discovery.Eureka.DiscoveryClient+<RegisterAsync>d__58.MoveNext

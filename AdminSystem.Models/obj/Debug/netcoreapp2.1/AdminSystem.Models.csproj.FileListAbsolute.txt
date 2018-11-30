@@ -8,3 +8,4 @@ F:\StudyFile\AdminSystem\AdminSystem\AdminSystem.Models\obj\Debug\netcoreapp2.1\
 F:\StudyFile\AdminSystem\AdminSystem\AdminSystem.Models\obj\Debug\netcoreapp2.1\AdminSystem.Models.AssemblyInfo.cs
 F:\StudyFile\AdminSystem\AdminSystem\AdminSystem.Models\obj\Debug\netcoreapp2.1\AdminSystem.Models.dll
 F:\StudyFile\AdminSystem\AdminSystem\AdminSystem.Models\obj\Debug\netcoreapp2.1\AdminSystem.Models.pdb
+F:\StudyFile\AdminSystem\AdminSystem\AdminSystem.Models\obj\Debug\netcoreapp2.1\AdminSystem.Models.csprojAssemblyReference.cache

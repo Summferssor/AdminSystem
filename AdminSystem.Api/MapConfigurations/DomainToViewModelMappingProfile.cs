@@ -1,4 +1,5 @@
-﻿using AdminSystem.Models.Admin.AdminModels.ModelCreation;
+﻿using AdminSystem.Models.Admin.AdminModels.Model;
+using AdminSystem.Models.Admin.AdminModels.ModelCreation;
 using AdminSystem.Models.Admin.AdminModels.ModelModification;
 using AdminSystem.Models.Admin.AdminModels.ModelView;
 using AutoMapper;
@@ -16,6 +17,7 @@ namespace AdminSystem.Api.MapConfigurations
         {
             CreateMap<Role, RoleModification>();
             CreateMap<Role, RoleCreation>();
+            CreateMap<Role, RoleView>();
         }
     }
 }

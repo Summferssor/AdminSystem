@@ -1,61 +1,37 @@
 ﻿using AdminSystem.Common;
 using AdminSystem.IRepositories.Admin;
+using AdminSystem.Models.Admin.AdminModels.Model;
 using AdminSystem.Models.Admin.AdminModels.ModelView;
+using AdminSystem.Models.Admin.Infrastructure;
 using AdminSystem.Models.Admin.MyDbContext;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.ChangeTracking;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading.Tasks;
 
 namespace AdminSystem.Repositories.Admin
 {
-    public class RoleRepository : IRoleRepository
+    public class RoleRepository : BaseRepository<Role> ,IRoleRepository 
     {
-        private readonly AdminDbContext _context;
-        public RoleRepository(AdminDbContext adminDbContext)
+        public RoleRepository(IUnitOfWork unitOfWork) : base(unitOfWork)
         {
-            _context = adminDbContext;
         }
-        public void Add(Role role)
+        public override void Update(Role entity)
         {
-            try
-            {
-                role.RoleId = Method.GetGuid32();
-                //_context.Stu.Add(entity);
-                _context.Entry<Role>(role).State = EntityState.Added;
-            }
-            catch (Exception ex)
-            {
-                throw ex;
-            }
+            EntityEntry<Role> dbEntityEntry = Context.Entry(entity);
+            dbEntityEntry.State = EntityState.Modified;
+            dbEntityEntry.Property(x => x.RoleId).IsModified = false;
         }
-        public IEnumerable<Role> GetAll()
+        public override Role GetSingle(string id)
         {
-            try
-            {
-                var List = from roles in _context.Role
-                               select roles;
-                return List.ToList();
-            }
-            catch (Exception ex)
-            {
-                throw ex;
-            }
+            return  Context.Set<Role>().FirstOrDefault(x => x.RoleId == id);
         }
-        public bool Save()
+        public override async Task<Role> GetSingleAsync(string id)
         {
-
-            try
-            {
-                return _context.SaveChanges() >= 0;
-            }
-            catch (Exception ex)
-            {
-                throw ex;
-            }
-
-
+            return await Context.Set<Role>().FirstOrDefaultAsync(x => x.RoleId == id);
         }
     }
 }

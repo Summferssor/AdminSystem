@@ -1,0 +1,17 @@
+F:\StudyFile\AdminSystem\AdminSystem\AdminSystem.Test-Service\bin\Debug\netcoreapp2.1\AdminSystem.Test-Service.deps.json
+F:\StudyFile\AdminSystem\AdminSystem\AdminSystem.Test-Service\bin\Debug\netcoreapp2.1\AdminSystem.Test-Service.runtimeconfig.json
+F:\StudyFile\AdminSystem\AdminSystem\AdminSystem.Test-Service\bin\Debug\netcoreapp2.1\AdminSystem.Test-Service.runtimeconfig.dev.json
+F:\StudyFile\AdminSystem\AdminSystem\AdminSystem.Test-Service\bin\Debug\netcoreapp2.1\AdminSystem.Test-Service.dll
+F:\StudyFile\AdminSystem\AdminSystem\AdminSystem.Test-Service\obj\Debug\netcoreapp2.1\AdminSystem.Test-Service.csproj.CoreCompileInputs.cache
+F:\StudyFile\AdminSystem\AdminSystem\AdminSystem.Test-Service\obj\Debug\netcoreapp2.1\AdminSystem.Test-Service.RazorAssemblyInfo.cache
+F:\StudyFile\AdminSystem\AdminSystem\AdminSystem.Test-Service\obj\Debug\netcoreapp2.1\AdminSystem.Test-Service.RazorAssemblyInfo.cs
+F:\StudyFile\AdminSystem\AdminSystem\AdminSystem.Test-Service\obj\Debug\netcoreapp2.1\AdminSystem.Test-Service.AssemblyInfoInputs.cache
+F:\StudyFile\AdminSystem\AdminSystem\AdminSystem.Test-Service\obj\Debug\netcoreapp2.1\AdminSystem.Test-Service.AssemblyInfo.cs
+F:\StudyFile\AdminSystem\AdminSystem\AdminSystem.Test-Service\obj\Debug\netcoreapp2.1\AdminSystem.Test-Service.RazorTargetAssemblyInfo.cache
+F:\StudyFile\AdminSystem\AdminSystem\AdminSystem.Test-Service\bin\Debug\netcoreapp2.1\AdminSystem.Test-Service.pdb
+F:\StudyFile\AdminSystem\AdminSystem\AdminSystem.Test-Service\obj\Debug\netcoreapp2.1\AdminSystem.Test-Service.dll
+F:\StudyFile\AdminSystem\AdminSystem\AdminSystem.Test-Service\obj\Debug\netcoreapp2.1\AdminSystem.Test-Service.pdb
+F:\StudyFile\AdminSystem\AdminSystem\AdminSystem.Test-Service\obj\Debug\netcoreapp2.1\AdminSystem.Test-Service.csprojAssemblyReference.cache
+F:\StudyFile\AdminSystem\AdminSystem\AdminSystem.Test-Service\bin\Debug\netcoreapp2.1\AdminSystem.Common.dll
+F:\StudyFile\AdminSystem\AdminSystem\AdminSystem.Test-Service\bin\Debug\netcoreapp2.1\AdminSystem.Common.pdb
+F:\StudyFile\AdminSystem\AdminSystem\AdminSystem.Test-Service\obj\Debug\netcoreapp2.1\AdminSystem.Test-Service.csproj.CopyComplete

@@ -22,7 +22,7 @@ namespace AdminSystem.Api
                 .ConfigureAppConfiguration((context,builder) => builder.SetBasePath(context.HostingEnvironment.ContentRootPath)
                     .AddJsonFile("appSettings.json")
                     .Build())
-                .UseUrls("http://*:8099")
+                .UseUrls("http://*:8010")
                 .UseStartup<Startup>();
     }
 }

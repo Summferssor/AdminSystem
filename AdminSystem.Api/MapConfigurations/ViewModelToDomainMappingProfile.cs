@@ -1,4 +1,5 @@
-﻿using AdminSystem.Models.Admin.AdminModels.ModelModification;
+﻿using AdminSystem.Models.Admin.AdminModels.Model;
+using AdminSystem.Models.Admin.AdminModels.ModelModification;
 using AdminSystem.Models.Admin.AdminModels.ModelView;
 using AutoMapper;
 using System;
@@ -13,6 +14,8 @@ namespace AdminSystem.Api.MapConfigurations
         public override string ProfileName => "ViewModelToDomainMappings";
         public ViewModelToDomainMappingProfile()
         {
+            CreateMap<RoleModification, Role>();
+            CreateMap<RoleView, Role>();
             CreateMap<RoleModification, Role>();
         }
     }

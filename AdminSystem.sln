@@ -3,15 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28010.2046
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdminSystem.Api", "AdminSystem.Api\AdminSystem.Api.csproj", "{7BA57F2B-0734-4274-A129-B4D297198A92}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AdminSystem.Api", "AdminSystem.Api\AdminSystem.Api.csproj", "{7BA57F2B-0734-4274-A129-B4D297198A92}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdminSystem.Common", "AdminSystem.Common\AdminSystem.Common.csproj", "{1452D8BD-4E54-4893-9BB9-0162BC3AFB3A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AdminSystem.Common", "AdminSystem.Common\AdminSystem.Common.csproj", "{1452D8BD-4E54-4893-9BB9-0162BC3AFB3A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdminSystem.Repositories", "AdminSystem.Repositories\AdminSystem.Repositories.csproj", "{A6F670E9-F597-4897-AB20-C2220EEB9594}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AdminSystem.Repositories", "AdminSystem.Repositories\AdminSystem.Repositories.csproj", "{A6F670E9-F597-4897-AB20-C2220EEB9594}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdminSystem.IRepositories", "AdminSystem.IRepositories\AdminSystem.IRepositories.csproj", "{5076AD38-F25F-4338-A1E6-C96BF582AD24}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AdminSystem.IRepositories", "AdminSystem.IRepositories\AdminSystem.IRepositories.csproj", "{5076AD38-F25F-4338-A1E6-C96BF582AD24}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdminSystem.Models", "AdminSystem.Models\AdminSystem.Models.csproj", "{D93ECC58-F934-4634-8CB1-C5762BF5959B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AdminSystem.Models", "AdminSystem.Models\AdminSystem.Models.csproj", "{D93ECC58-F934-4634-8CB1-C5762BF5959B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AdminSystem.Test-Service", "AdminSystem.Test-Service\AdminSystem.Test-Service.csproj", "{EB0DA870-AC85-41F3-BFC9-E5BF7BC745C3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{D93ECC58-F934-4634-8CB1-C5762BF5959B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D93ECC58-F934-4634-8CB1-C5762BF5959B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D93ECC58-F934-4634-8CB1-C5762BF5959B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EB0DA870-AC85-41F3-BFC9-E5BF7BC745C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EB0DA870-AC85-41F3-BFC9-E5BF7BC745C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EB0DA870-AC85-41F3-BFC9-E5BF7BC745C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EB0DA870-AC85-41F3-BFC9-E5BF7BC745C3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

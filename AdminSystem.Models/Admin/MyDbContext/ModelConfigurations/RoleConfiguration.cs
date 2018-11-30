@@ -1,4 +1,5 @@
-﻿using AdminSystem.Models.Admin.AdminModels.ModelView;
+﻿using AdminSystem.Models.Admin.AdminModels.Model;
+using AdminSystem.Models.Admin.AdminModels.ModelView;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using System;

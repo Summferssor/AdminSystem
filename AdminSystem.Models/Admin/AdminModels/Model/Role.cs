@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace AdminSystem.Models.Admin.AdminModels.ModelView
+namespace AdminSystem.Models.Admin.AdminModels.Model
 {
     public class Role
     {

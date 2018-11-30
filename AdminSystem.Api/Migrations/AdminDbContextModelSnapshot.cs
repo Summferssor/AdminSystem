@@ -16,7 +16,7 @@ namespace AdminSystem.Api.Migrations
                 .HasAnnotation("ProductVersion", "2.1.4-rtm-31024")
                 .HasAnnotation("Relational:MaxIdentifierLength", 64);
 
-            modelBuilder.Entity("AdminSystem.Models.Admin.AdminModels.ModelView.Role", b =>
+            modelBuilder.Entity("AdminSystem.Models.Admin.AdminModels.Model.Role", b =>
                 {
                     b.Property<string>("RoleId")
                         .ValueGeneratedOnAdd();
